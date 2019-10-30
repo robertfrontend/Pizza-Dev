@@ -5,14 +5,15 @@
 
 body {
     font-family: 'Nunito', sans-serif;
+
 }
 
 .header {
     width: 100%;
-    height: 100vh;
-    background: url(../imagenes/stuffedcrustpizza.jpg);
-    background-size: cover;
-    
+    height: auto;
+     /* background: url(../imagenes/stuffedcrustpizza.jpg);
+    background-size: cover;  */
+
 }
 
 
@@ -60,7 +61,7 @@ body {
 
 .div-logo img {
     padding-top: 10px;
-    width: 60%;
+    width: 45%;
 }
 
 
@@ -69,14 +70,14 @@ body {
     float: left;
     width: 60%;
     height: auto;
-     /* background: blue;  */
+      /* background: blue;   */
     text-align: center;
 }
 
 .div-menu ul {
     list-style: none;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 5px 10px;
 
     border-radius: 2px;
@@ -100,8 +101,8 @@ body {
 }
 
 .div-menu a:hover {
-
-    transition: all .2s linear;
+    color:rgb(250, 0, 0) ;
+    transition: all .1s linear;
 
 }
 
@@ -112,7 +113,7 @@ body {
     float: left;
     width: 100%;
     height: 85vh;
-    background: rgba(168, 70, 70, 0.205);
+    background: rgba(0, 0, 0, 0.137); 
     /* outline: 1px dashed rgb(255, 255, 255);  */
 }
 
@@ -123,6 +124,8 @@ body {
     /* outline:  1px dashed red; */
     margin-top: 50px;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.685);
+    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
 
 }
 
@@ -134,22 +137,22 @@ body {
     /* outline:  1px dashed rgb(0, 0, 0); */
     text-align: center;
     margin-top: 70px;
-    /* background: rgba(0, 0, 0, 0.726); */
 
+    border-radius: 20px;
+     
 }
 
 
 .div-desc h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     font-size: 45px;
     padding-top: 10px;
-    
+
 }
 
 .div-desc p {
-
     font-size: 22px;
-    color: rgb(250, 244, 244);
+    color: rgb(7, 7, 7);
     padding: 20px 30px;
 }
 
@@ -168,6 +171,7 @@ body {
     padding-top: 10px;
     max-width: 60%;
     border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(24, 23, 23, 0.356);
 }
 
 
@@ -177,18 +181,18 @@ body {
     height: auto;
     text-align: center;
     /* background: rgba(0, 0, 0, 0.726); */
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .control-p p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 22px;
     padding: 20px 40px;
 
 }
 
 .control-p strong {
-    color: rgb(69, 245, 0);
+    color: rgb(255, 0, 0);
 }
 
 .control-btn-pedir {
@@ -204,8 +208,8 @@ body {
 .control-btn-pedir a{
     padding: 2.5% 5%;
     /* background: blue; */
-    background: rgb(255, 255, 255);
-    color: rgb(7, 7, 7);
+    background: rgba(0, 0, 0, 0.993);
+    color: rgb(250, 250, 250);
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -216,13 +220,64 @@ body {
 
 .control-btn-pedir a:hover {
     transition: all .1s linear;
-    background: rgb(247, 0, 0);
+    background: rgba(255, 0, 0, 0.897);
     color: white;
 }
+
 
 .div-seccion-1 {
     position: relative;
     float: left;
     width: 100%;
+    background: rgba(0, 0, 0, 0.137);
+}
+
+.sub-seccion-1 {
+    position: relative;
+    float: left;
+    width: 100%;
+    /* outline:  1px dashed rgb(0, 0, 0);   */
+    margin-top: 40px;
+
+    border-radius: 20px;
+}
+
+
+.promo-1 {
+    width: 25%;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.685);
+    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 4%;
+    flex-wrap: wrap;
+}
+
+
+.promo-desc {
+    /* background: rgba(255, 0, 0, 0.486); */
+}
+
+.promo-desc h3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.promo-desc p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.div-prom-img {
+    width: 100%;
     height: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.div-prom-img img{
+    max-width: 100%;
+    border-radius: 10px;
 }
