@@ -1,0 +1,41 @@
+@media screen and (max-width:1100px){
+    .div-menu{
+        position: fixed;
+        margin-left: 50%;
+        margin-top: 70px;
+        width: 45%;
+        height: 100vh;
+        z-index: 3;
+        display: block;
+        text-align: center;
+        background: red;
+
+    }
+    .div-menu li br{
+        /* background: red; */
+        display: block;
+    }
+
+    .div-menu li {
+        padding-top: 50px;
+    }
+
+    .div-menu a {
+        font-size: 28px;
+    }
+
+    .div-icono-menu {
+        position: relative;
+        width: 50%;
+        float: left;
+        padding: 20px;
+        display: block;
+        background: rgb(114, 114, 114);
+        text-align: right;
+    }
+
+    .promo-1{
+        width: 40%;
+        margin: 10px 5%;
+    }
+}
