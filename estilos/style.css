@@ -11,11 +11,17 @@ body {
 
 }
 
+html{
+    scroll-behavior: auto;
+scroll-behavior: smooth;
+background: rgba(0, 0, 0, 0.137); 
+}
+
 .header {
     width: 100%;
     height: auto;
-     /* background: url(../imagenes/stuffedcrustpizza.jpg);
-    background-size: cover;  */
+    background: url(../imagenes/stuffedcrustpizza.jpg);
+    background-size: cover;
 
 }
 
@@ -84,12 +90,10 @@ body {
     padding: 5px 10px;
 
     border-radius: 2px;
-    
 }
 
 .div-menu li {
     /* background: red; */
-    
 }
 
 
@@ -109,14 +113,45 @@ body {
 
 }
 
+.div-aler-perdir{
+    width: 100%;
+    height: 100px;
+    background: rgba(121, 119, 119, 0.219);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
+.div-aler-perdir p {
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size:20px;
+    font-weight: bold;
+}
+
+.div-aler-perdir a {
+    background: rgb(255, 0, 0);
+    padding: 12px 50px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.div-aler-perdir a:hover {
+    background: rgba(0, 0, 0, 0.884);
+    transition: all .3s linear;
+    color: white;
+}
 
 .div-bienvenida {
     position: relative;
     float: left;
     width: 100%;
     height: auto;
-    background: rgba(0, 0, 0, 0.137); 
+    background: white;
+    /* background: rgba(0, 0, 0, 0.137);  */
     /* outline: 1px dashed rgb(255, 255, 255);  */
 }
 
@@ -127,8 +162,8 @@ body {
     /* outline:  1px dashed red; */
     margin-top: 50px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
+    /* background: rgba(255, 255, 255, 0.685);
+    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
 
 }
 
@@ -142,7 +177,6 @@ body {
     margin-top: 70px;
 
     border-radius: 20px;
-     
 }
 
 
@@ -154,9 +188,10 @@ body {
 }
 
 .div-desc p {
-    font-size: 22px;
-    color: rgb(7, 7, 7);
+    font-size: 20px;
+    color: rgba(7, 7, 7, 0.877);
     padding: 20px 30px;
+    font-weight: bold;
 }
 
 
@@ -188,8 +223,9 @@ body {
 }
 
 .control-p p {
-    color: rgb(0, 0, 0);
-    font-size: 22px;
+    color: rgba(7, 7, 7, 0.877);
+    font-weight: bold;
+    font-size: 20px;
     padding: 20px 40px;
 
 }
@@ -212,7 +248,7 @@ body {
     padding: 2.5% 5%;
     /* background: blue; */
 
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
     color: rgb(250, 250, 250);
     font-size: 20px;
     font-weight: bold;
@@ -223,8 +259,8 @@ body {
 }
 
 .control-btn-pedir a:hover {
-    background: rgba(243, 0, 0, 0.959);
-    transition: all .1s linear;
+    background: rgba(0, 0, 0, 0.884);
+    transition: all .3s linear;
     color: white;
 }
 
@@ -235,14 +271,22 @@ body {
     position: relative;
     float: left;
     width: 100%;
-    background: rgba(0, 0, 0, 0.137);
     padding-top: 50px;
+    background: white;
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.205);
+
 }
 
 .div-seccion-1 h2 {
     text-align: center;
     font-size: 40px;
     color: rgba(12, 12, 12, 0.767);
+}
+
+#ico-ubi {
+    position: absolute;
+    padding-top: 5px;
+    color: rgb(44, 44, 44);
 }
 
 .div-seccion-1 strong {
@@ -257,23 +301,23 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     /* outline:  1px dashed rgb(0, 0, 0);   */
-    margin-top: 40px;
-    background: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
+    margin-top: 0px;
+    /* background: rgba(255, 255, 255, 0.685);
+    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
     border-radius: 20px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
 
 .promo-1 {
-    width: 25%;
+    width: 25.3%;
     height: 350px;
     border-radius: 10px;
     margin: 30px 4%;
     color: rgb(0, 0, 0);
 
-    box-shadow: 0px 5px 19px 5px  rgba(0, 0, 0, 0.219);
+    box-shadow: 0px 5px 19px 5px  rgba(0, 0, 0, 0.466);
 }
 
 
@@ -282,15 +326,20 @@ body {
 }
 
 .promo-desc h3 {
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .promo-desc p {
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+.promo-desc a {
+    color: red;
+}
 
 .div-prom-img {
     position: relative;
@@ -300,6 +349,8 @@ body {
     text-align: center;
 
 }
+
+
 
 #imagen-1 {
     width: 90%;
@@ -322,15 +373,70 @@ body {
 }
 
 
+.div-contactos {
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    float: left;
+    /* background: rgba(0, 0, 0, 0.137); */
+    background: white;
+    text-align: center;
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.438);
+}
+
+.div-contactos h2 { 
+    font-size: 40px;
+    padding: 20px;
+    color: rgba(255, 0, 0, 0.74);
+}
+
+.div-sub-contactos{
+    width: 100%;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+   /* box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
+}
+
+.div-contact{
+    padding: 10px;
+
+}
+
+.div-contact p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.795);
+}
+
+.div-contact i {
+    position: relative;
+    color:rgba(231, 0, 0, 0.788);
+
+
+}
+
+.div-redes h2 {
+    color: rgba(37, 37, 37, 0.89);
+    font-size: 30px;
+}
+
+
+.div-redes { 
+    padding-top: 1px;
+    padding-bottom: 40px;
+}
+
+
 .div-seccion-2 {
     position: relative;
     float: left;
     width: 100%;
     height: auto;
-    background: rgba(0, 0, 0, 0.137);
-    padding-top: 40px;
+    background: white;
+    padding-top: 30px;
+
      /* outline:  1px dashed rgb(0, 0, 0);    */
-     
+     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.438);
 }
 
 
@@ -360,7 +466,6 @@ body {
     width: 50%;
     height: auto;
     /* outline:  1px dashed rgb(255, 0, 0);    */
-    
 }
 
 
@@ -392,7 +497,6 @@ body {
     margin-top: 50px;
     width: 100%;
     text-align: center;
-    
 }
 
 .div-ub-inter-map iframe {
@@ -406,7 +510,7 @@ body {
     padding-top: 10px;
     text-align: center;
     font-size: 32px;
-    color: rgba(0, 0, 0, 0.788);
+    color: rgba(199, 16, 16, 0.788);
 }
 
 .div-sec-inter h2 {
@@ -415,3 +519,56 @@ body {
     font-size: 32px;
     color: rgba(0, 0, 0, 0.788);
 }
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+  /* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
