@@ -1,16 +1,23 @@
-@media screen and (max-width:1100px){
+@media screen and (max-width:1000px){
     .div-menu{
-        position: fixed;
-        margin-left: 50%;
-        margin-top: 70px;
-        width: 45%;
+        position: absolute;
+        left: 100vw;
+        margin-top: 60px;
+        width:38%;
         height: 100vh;
         z-index: 3;
-        display: block;
+        display: none;
         text-align: center;
-        background: red;
+        background: rgba(253, 252, 252, 0.945);
 
     }
+
+    .mostrar {
+        transition: all .8s linear;
+        left: 65%;
+        display: block;
+     }
+
     .div-menu li br{
         /* background: red; */
         display: block;
@@ -24,18 +31,35 @@
         font-size: 28px;
     }
 
+
     .div-icono-menu {
-        position: relative;
-        width: 50%;
-        float: left;
-        padding: 20px;
+        position: absolute;
+        width: 5%;
+        margin-left: 95%;
+        margin-top: 10px;
+        padding: 0px;
         display: block;
-        background: rgb(114, 114, 114);
-        text-align: right;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.123);
+        border-radius: 100px;
+
+    }
+
+    .div-icono-menu i {
+        padding-top: 5px;
+        font-size: 36px;
+        color: rgb(255, 0, 0);
     }
 
     .promo-1{
         width: 40%;
         margin: 10px 5%;
     }
+
+
+    .div-ub-inter-map iframe{
+        width: 90%;
+    }
+
+
 }
