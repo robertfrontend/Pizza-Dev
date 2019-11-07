@@ -136,16 +136,9 @@ scroll-behavior: smooth;
     align-items: center;
 }
 
-.div-aler-perdir p {
-    padding-top: 10px;
-    color: rgb(0, 0, 0);
-    font-size:20px;
-    font-weight: bold;
-}
-
 .div-aler-perdir a {
     background: rgb(255, 0, 0);
-    padding: 12px 50px;
+    padding: 10px 100px;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -158,6 +151,7 @@ scroll-behavior: smooth;
     transition: all .3s linear;
     color: white;
 }
+
 
 /*--------*/
 
