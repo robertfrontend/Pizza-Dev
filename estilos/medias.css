@@ -158,10 +158,34 @@
         width: 60%;
     }
 
+    #ico-ubi {
+        display: none;
+    }
+
     .div-sec-inter{
         width: 60%;
     }
+    .control-btn-pedir {
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
+    #lo-quiero{
+        margin-top: 0px;
+        width: 80%;
+    }
+
+    #ver-ofer{
+        margin-top: 10px;
+        width: 70%;
+    }
 
 }
 
