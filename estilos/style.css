@@ -131,9 +131,10 @@ scroll-behavior: smooth;
     width: 100%;
     height: 100px;
     background: rgba(121, 119, 119, 0.219);
-    justify-content: center;
+    justify-content: right;
     display: flex;
     align-items: center;
+    text-align: right;
 }
 
 
@@ -262,13 +263,13 @@ scroll-behavior: smooth;
     margin-bottom: 30px;
 }
 #lo-quiero{
-    padding: 1.8% 5%;
+    padding: 2.5% 5%;
     background:rgb(255, 0, 0);
     color: rgb(250, 250, 250);
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 #lo-quiero:hover{
@@ -276,13 +277,13 @@ scroll-behavior: smooth;
 }
 
 #ver-ofer{
-    padding: 1.8% 2%;
+    padding: 2.5% 3%;
     color: rgb(252, 252, 252);
     background: rgba(0, 0, 0, 0.918);
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 #ver-ofer:hover{
     background: rgba(0, 0, 0, 0.74);
@@ -376,11 +377,12 @@ scroll-behavior: smooth;
 .promo-desc a {
     color: rgb(255, 255, 255);
     background: rgba(0, 0, 0, 0.822);
-    padding: 12px 50px;
-    border-radius: 5px;
+    padding: 4% 10%;
+    border-radius: 30px;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+    transition: all .2s ;
 }
 
 .promo-desc a:hover{
