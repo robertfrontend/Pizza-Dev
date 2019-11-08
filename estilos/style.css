@@ -15,21 +15,19 @@ body {
 
 html{
     scroll-behavior: auto;
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 
 }
 
 .header {
     width: 100%;
     height: auto;
-
 }
 
 
 .container {
     margin-left: 2%;
     margin-right: 2%;
-
 }
 
 .div-header {
@@ -37,7 +35,6 @@ scroll-behavior: smooth;
     float: left;
     width: 100%;
     height: auto;
- 
     /* outline: 1px dashed red; */
 }
 
@@ -46,7 +43,6 @@ scroll-behavior: smooth;
     position: relative;
     float: left;
     width: 100%;
-
      /* outline: 1px dashed rgb(4, 29, 253);   */
 }
 
@@ -79,7 +75,6 @@ scroll-behavior: smooth;
     display: none;
 }
 
-
 .icono-menu{
     display: none;
 }
@@ -88,19 +83,17 @@ scroll-behavior: smooth;
     position: relative;
     float: left;
     width: 50%;
-      /* background: blue;   */
-      height: 80px;
-       /* background: blue;  */
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
+    /* background: blue;   */
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .div-menu ul {
     list-style: none;
-
     border-radius: 2px;
 }
 
@@ -117,13 +110,11 @@ scroll-behavior: smooth;
     font-weight: bold;
     padding: 0px 10px;
     border-radius: 1px;
-
 }
 
 .div-menu a:hover {
     color:rgb(250, 0, 0) ;
     transition: all .1s linear;
-
 }
 
 /*--------*/
@@ -131,10 +122,10 @@ scroll-behavior: smooth;
     width: 100%;
     height: 100px;
     background: rgba(121, 119, 119, 0.219);
-    justify-content: right;
+    justify-content: center;
     display: flex;
     align-items: center;
-    text-align: right;
+    text-align: center;
 }
 
 
@@ -162,7 +153,6 @@ scroll-behavior: smooth;
     width: 100%;
     height: auto;
     background: rgb(255, 255, 255); 
-    /* background: rgba(0, 0, 0, 0.137);  */
     /* outline: 1px dashed rgb(255, 255, 255);  */
 }
 
@@ -175,9 +165,6 @@ scroll-behavior: smooth;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    /* background: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
-
 }
 
 .div-desc {
@@ -200,7 +187,6 @@ scroll-behavior: smooth;
     color: rgb(255, 0, 0);
     font-size: 45px;
     padding-top: 10px;
-
 }
 
 .div-desc p {
@@ -246,7 +232,6 @@ scroll-behavior: smooth;
     font-weight: bold;
     font-size: 20px;
     padding: 20px 40px;
-
 }
 
 .control-p strong {
@@ -296,7 +281,6 @@ scroll-behavior: smooth;
     padding-top: 50px;
     background: white;
     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.205);
-
 }
 
 .div-seccion-1 h2 {
@@ -324,8 +308,6 @@ scroll-behavior: smooth;
     flex-wrap: wrap;
     /* outline:  1px dashed rgb(0, 0, 0);   */
     margin-top: 0px;
-    /* background: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
     border-radius: 20px;
     padding-top: 30px;
     padding-bottom: 50px;
@@ -352,8 +334,6 @@ scroll-behavior: smooth;
 
 .promo-desc {
     text-align: center;
-
-    /* background: rgba(255, 0, 0, 0.486); */
 }
 
 .promo-desc h3 {
@@ -474,9 +454,8 @@ scroll-behavior: smooth;
     height: auto;
     background: white;
     padding-top: 30px;
-
-     /* outline:  1px dashed rgb(0, 0, 0);    */
-     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.26);
+    /* outline:  1px dashed rgb(0, 0, 0);    */
+    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.26);
 }
 
 
@@ -491,8 +470,8 @@ scroll-behavior: smooth;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.685);
     box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
-     /* outline:  1px dashed rgb(0, 0, 0);    */
-     padding-bottom: 50px;
+    /* outline:  1px dashed rgb(0, 0, 0);    */
+    padding-bottom: 50px;
 }
 
 .div-seccion-2 h2 {
