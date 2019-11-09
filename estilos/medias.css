@@ -53,14 +53,14 @@
         padding-left: 12px;
         padding-right: 12px;
         padding-bottom: 8px;
-        background: rgba(0, 0, 0, 0.788);
+        background: rgba(0, 0, 0, 0.541);
         border-radius: 200px;
     }
 
     .div-icono-menu i {
         padding-top: 5px;
         font-size: 40px;
-        color: rgb(240, 240, 240);
+        color: rgba(255, 255, 255, 0.993);
     }
 
     .div-logo{
