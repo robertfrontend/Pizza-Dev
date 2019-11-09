@@ -40,8 +40,9 @@ html{
 
 
 .sub-header {
-    position: relative;
-    float: left;
+    position: fixed;
+    z-index: 10;
+    background: white;
     width: 100%;
      /* outline: 1px dashed rgb(4, 29, 253);   */
 }
@@ -119,6 +120,7 @@ html{
 
 /*--------*/
 .div-aler-perdir{
+    margin-top: 100px;
     width: 100%;
     height: 100px;
     background: rgba(121, 119, 119, 0.219);
