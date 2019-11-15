@@ -1,4 +1,4 @@
-@media screen and (max-width:1000px){
+    @media screen and (max-width:1000px){
     .div-menu{
         position: fixed;
         left:100vw;
@@ -49,18 +49,19 @@
     }
 
     .divoc {
-        padding-top: 8px;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-bottom: 8px;
-        background: rgba(0, 0, 0, 0.541);
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
         border-radius: 200px;
+        background: rgba(0, 0, 0, 0.719);
     }
 
     .div-icono-menu i {
         padding-top: 5px;
         font-size: 40px;
-        color: rgba(255, 255, 255, 0.993);
+        font-weight: 400;
+        color: rgb(255, 255, 255);
     }
 
     .div-logo{
@@ -87,9 +88,6 @@
         width: 90%;
     }
 
-    .div-aler-perdir{
-        margin-top: 15%;
-    }
 
 
 }
@@ -135,8 +133,7 @@
 
     .div-icono-menu i {
         padding-top: 5px;
-        font-size: 30px;
-        color: rgb(240, 240, 240);
+        font-size: 40px;
     }
 
     .div-img-desc img{
@@ -186,12 +183,12 @@
 
     #lo-quiero{
         margin-top: 0px;
-        width: 80%;
+        width: 70%;
     }
 
     #ver-ofer{
         margin-top: 10px;
-        width: 70%;
+        width: 60%;
     }
 
 }
@@ -215,10 +212,6 @@
         display: block;
      }
 
-
-    .div-aler-perdir  {
-        display: none;
-    }
 
     .promo-1 {
         width: 70%;
