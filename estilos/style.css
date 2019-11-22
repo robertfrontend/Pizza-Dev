@@ -155,7 +155,7 @@ html{
 }
 
 .div-desc:hover {
-    transform: translateY(-25px);
+    transform: translateY(-10px);
     box-shadow: -1px -10px 10px rgba(24, 23, 23, 0.082);
 }
 
