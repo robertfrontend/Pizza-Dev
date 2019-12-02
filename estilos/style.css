@@ -11,6 +11,11 @@ body {
     /* background: url(../imagenes/stuffedcrustpizza.jpg);
     background-size: cover; */
 
+    background: url(../imagenes/fondo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+
 }
 
 html{
@@ -36,26 +41,15 @@ html{
     width: 100%;
     height: auto;
     /* outline: 1px dashed red; */
+    background: #1e272e;
 }
 
 
 .sub-header {
-    position: fixed;
-    z-index: 5;
-    background: white;
-    margin-left: 0px;
-    width: 100%;
-     /* outline: 1px dashed rgb(4, 29, 253);   */
-}
-
-.divcol {
     position: relative;
-    float: left;
+    z-index: 5;
+    margin-left: -25px;
     width: 100%;
-    background: rgb(255, 255, 255); 
-    /* display: flex;
-    justify-content: left;
-    align-items: center; */
 }
 
 
@@ -107,7 +101,7 @@ html{
 
 .div-menu a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bold;
     padding: 0px 10px;
@@ -115,8 +109,50 @@ html{
 }
 
 .div-menu a:hover {
-    color:rgb(250, 0, 0) ;
+    color:rgb(0, 86, 121) ;
     transition: all .1s linear;
+}
+
+
+/*---*/
+
+.seccion-yes{
+    width: 100%;
+    height: 80vh;
+
+}
+
+.div-yes{
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.616);
+}
+
+.sub-yes{
+    width: 100%;
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.yes {
+    width: 80%;
+}
+
+.yes h1 {
+    padding: 30px;
+    font-size: 80px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.yes p {
+    font-size: 25px;
+    padding: 10px;
+    color:white;
 }
 
 
@@ -256,14 +292,14 @@ html{
     float: left;
     width: 100%;
     padding-top: 50px;
-    background: white;
-    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.205);
+    background: #1e272e;
+
 }
 
 .div-seccion-1 h2 {
     text-align: center;
     font-size: 40px;
-    color: rgba(12, 12, 12, 0.767);
+    color: rgba(255, 255, 255, 0.767);
 }
 
 #ico-ubi {
@@ -273,7 +309,7 @@ html{
 }
 
 .div-seccion-1 strong {
-    color: rgba(199, 18, 18, 1);
+    color: rgb(255, 255, 255);
 }
 
 .sub-seccion-1 {
@@ -296,8 +332,9 @@ html{
     height: auto;
     margin: 30px 4%;
     color: rgb(0, 0, 0);
-    transition: all .28s;
+    transition: all .5s;
     box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.199);
+    background: #1e272e;
     border-radius: 8px;
     flex-wrap: wrap;
     display: flex;
@@ -310,19 +347,22 @@ html{
 
 
 .promo-desc {
-    text-align: center;
+    width: 100%;
+    padding: 20px;
 }
 
 .promo-desc h3 {
     font-weight: bold;
-    padding: 10px;
-    color: rgba(199, 18, 18, 1);
-    font-size: 20px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
 }
 
 .promo-desc p {
     font-weight: 100;
-    padding: 10px;
+    padding: 0px;
+    color: white;
+    font-size: 17px;
 }
 
 .div-btn-pedir-ya{
@@ -333,17 +373,17 @@ html{
 
 .promo-desc a {
     color: rgb(255, 255, 255);
-    background: rgba(0, 0, 0, 0.822);
+    background: rgb(0, 86, 121);
     padding: 4% 10%;
     border-radius: 30px;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
-    transition: all .2s ;
+    transition: all .3s ;
 }
 
 .promo-desc a:hover{
-    background: rgba(199, 18, 18, 1);
+    background: rgba(8, 6, 6, 0.719);
 }
 
 .div-prom-img {
@@ -373,43 +413,40 @@ html{
     position: relative;
     float: left;
     /* background: rgba(0, 0, 0, 0.137); */
-    background: white;
+    background: #1e272e;
     text-align: center;
     box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.171);
 }
 
 .div-contactos h2 { 
-    font-size: 40px;
+    font-size: 50px;
     padding: 20px;
-    color: rgba(199, 18, 18, 1);
+    color: white;
 }
 
 .div-sub-contactos{
     width: 100%;
     height: auto;
-    background: white;
     border-radius: 20px;
    /* box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
 }
 
 .div-contact{
     padding: 10px;
-
 }
 
 .div-contact p{
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.795);
+    color: rgba(255, 255, 255, 0.795);
 }
 
 .div-contact i {
     position: relative;
-    color:rgba(199, 18, 18, 1);
+    color:rgb(0, 86, 121);
 }
 
 .div-contact a{
-    color: rergba(199, 18, 18, 1)d;
-    text-decoration: none;
+    color: rgb(0, 86, 121);
 }
 
 .div-redes h2 {
@@ -523,13 +560,12 @@ html{
     position: relative;
     float: left;
     width: 100%;
-    background: rgb(0, 0, 0);
+    background: #1e272e;
 }
 
 .div-sub-footer{
     padding: 50px;
     text-align: center;
-    background: rgb(0, 0, 0);
 }
 
 .div-sub-footer p {

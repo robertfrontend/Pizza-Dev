@@ -106,6 +106,15 @@
         transition: all .8s;
     }
 
+    
+    .yes h1 {
+        padding: 10px;
+        font-size: 55px;
+        color: #ffffff;
+        font-weight: 900;
+    }
+
+
 
     .div-bienvenida{
         margin-top: 100px;
