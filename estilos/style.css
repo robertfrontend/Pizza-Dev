@@ -1,628 +1,543 @@
-*{
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+@charset "UTF-8";
+.boton1 {
+  padding: 6px 40px;
+  background-color: #ea2027;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: 2px 5px;
+}
+
+.boton1:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.boton1:focus {
+  background-color: #2c3e50;
+}
+
+.boton2 {
+  padding: 4px 40px;
+  border: 2px solid #ea2027;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: 2px 5px;
+}
+
+.boton2:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  color: white;
+  background: #ea2027;
+}
+
+.boton3 {
+  padding: 4px 40px;
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  margin: 2px 5px;
+  font-weight: bold;
+}
+
+.boton3:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  color: white;
+  background: #2c3e50;
+}
+
+.boton3:focus {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.divFlotante {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -1000px;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.divFlotante .divFlot {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.137);
+          box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.137);
+}
+
+.divFlotante .divFlot .divDerecho {
+  width: 60%;
+}
+
+.divFlotante .divFlot .divDerecho div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.divFlotante .divFlot .divDerecho div h1 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.divFlotante .divFlot .divDerecho div form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+}
+
+.divFlotante .divFlot .divDerecho div form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.divFlotante .divFlot .divDerecho div form input {
+  width: 60%;
+  padding: 5px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 40px;
+  color: #2c3e50;
+}
+
+.divFlotante .divFlot .divDerecho div form input:focus {
+  border: 1px solid #2c3e50;
+}
+
+.divFlotante .divFlot .divDerecho #divBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.divFlotante .divFlot .divIzquierdo {
+  width: 40%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    /* background: url(../imagenes/stuffedcrustpizza.jpg);
-    background-size: cover; */
-
-    background: url(../imagenes/fondo.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:cover;
-
-}
-
-html{
-    scroll-behavior: auto;
-    scroll-behavior: smooth;
-
-}
-
-.header {
-    width: 100%;
-    height: auto;
-}
-
-
-.container {
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.div-header {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    /* outline: 1px dashed red; */
-    background: #1e272e;
-}
-
-
-.sub-header {
-    position: relative;
-    z-index: 5;
-    margin-left: -25px;
-    width: 100%;
-}
-
-
-.div-logo {
-    position: relative;
-    float: left;
-     /* background: red;  */
-    width: 50%;
-    /* outline: 1px solid red; */
-    text-align: center;
-}
-
-.div-logo img {
-    padding-top: 10px;
-    max-width: 40%;
-}
-
-.div-icono-menu {
-    display: none;
-}
-
-.icono-menu{
-    display: none;
-}
-
-.div-menu {
-    position: relative;
-    float: left;
-    width: 50%;
-    /* background: blue;   */
-    height: 80px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.div-menu ul {
-    list-style: none;
-    border-radius: 2px;
-}
-
-.div-menu li br{
-    /* background: red; */
-    display: none;
-}
-
-
-.div-menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 10px;
-    border-radius: 1px;
-}
-
-.div-menu a:hover {
-    color:rgb(0, 86, 121) ;
-    transition: all .1s linear;
-}
-
-
-/*---*/
-
-.seccion-yes{
-    width: 100%;
-    height: 80vh;
-
-}
-
-.div-yes{
-    width: 100%;
-    height: 80vh;
-    background: rgba(0, 0, 0, 0.616);
-}
-
-.sub-yes{
-    width: 100%;
-    height:60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.yes {
-    width: 80%;
-}
-
-.yes h1 {
-    padding: 30px;
-    font-size: 80px;
-    color: #ffffff;
-    font-weight: 900;
-}
-
-.yes p {
-    font-size: 25px;
-    padding: 10px;
-    color:white;
-}
-
-
-/*--------*/
-
-.div-bienvenida {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    background: rgb(255, 255, 255); 
-    margin-top: 100px;
-    /* outline: 1px dashed rgb(255, 255, 255);  */
-}
-
-.sub-bienvenida {
-    position: relative;
-    float: left;
-    width: 100%;
-    /* outline:  1px dashed red; */
-    margin-top: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.div-desc {
-    width: 50%;
-    /* outline:  1px dashed rgb(0, 0, 0); */
-    text-align: center;
-    transition: all .25s;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    flex-wrap: wrap;
-}
-
-.div-desc:hover {
-    transform: translateY(-10px);
-    box-shadow: -1px -10px 10px rgba(24, 23, 23, 0.082);
-}
-
-.div-desc h2 {
-    color: rgba(199, 18, 18, 1);
-    font-size: 32px;
-    font-weight: 900px;
-    padding-top: 10px;
-}
-
-.div-desc p {
-    font-size: 20px;
-    color: rgba(7, 7, 7, 0.842);
-    padding: 20px 30px;
-    font-weight: bold;
-}
-
-
-.div-img-desc {
-    width: 40%;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-     /* outline:  1px dashed rgb(0, 0, 0);  */
-}
-
-.div-img-desc img {
-    padding-top: 10px;
-    max-width: 60%;
-    border-radius: 8px;
-    transition: all .25s;
-}
-
-.div-img-desc img:hover {
-    box-shadow: 10px 10px 10px rgba(24, 23, 23, 0.356);
-    transform: translateY(-25px);
-}
-
-.control-p {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    /* background: rgba(0, 0, 0, 0.726); */
-    border-radius: 0px;
-}
-
-.control-p p {
-    color: rgba(7, 7, 7, 0.877);
-    font-weight: bold;
-    font-size: 20px;
-    padding: 20px 40px;
-}
-
-.control-p strong {
-    color: rgba(199, 18, 18, 1);
-}
-
-.control-btn-pedir {
-    /* background: red; */
-    position: relative;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-#lo-quiero{
-    padding: 2.5% 5%;
-    background:rgba(199, 18, 18, 1);
-    color: rgb(250, 250, 250);
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-}
-
-#lo-quiero:hover{
-    background: rgba(199, 18, 18, 1);
-}
-
-#ver-ofer{
-    padding: 2.5% 3%;
-    color: rgb(252, 252, 252);
-    background: rgba(0, 0, 0, 0.918);
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-}
-#ver-ofer:hover{
-    background: rgba(0, 0, 0, 0.74);
-}
-/*--------*/
-.div-seccion-1 {
-    position: relative;
-    float: left;
-    width: 100%;
-    padding-top: 50px;
-    background: #1e272e;
-
-}
-
-.div-seccion-1 h2 {
-    text-align: center;
-    font-size: 40px;
-    color: rgba(255, 255, 255, 0.767);
-}
-
-#ico-ubi {
-    position: absolute;
-    padding-top: 5px;
-    color: rgb(26, 25, 25);
-}
-
-.div-seccion-1 strong {
-    color: rgb(255, 255, 255);
-}
-
-.sub-seccion-1 {
-    position: relative;
-    float: left;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* outline:  1px dashed rgb(0, 0, 0);   */
-    margin-top: 0px;
-    border-radius: 20px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
-
-
-.promo-1 {
-    width: 25.3%;
-    height: auto;
-    margin: 30px 4%;
-    color: rgb(0, 0, 0);
-    transition: all .5s;
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.199);
-    background: #1e272e;
-    border-radius: 8px;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.promo-1:hover{
-    transform: translateY(-20px);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Mukta", sans-serif;
+  overflow-x: hidden;
 }
 
-
-.promo-desc {
-    width: 100%;
-    padding: 20px;
-}
-
-.promo-desc h3 {
-    font-weight: bold;
-    padding: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-}
-
-.promo-desc p {
-    font-weight: 100;
-    padding: 0px;
-    color: white;
-    font-size: 17px;
-}
-
-.div-btn-pedir-ya{
-    width: 100%;
-    /* background: black; */
-    padding: 20px;
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../imagenes/fondo.jpg);
+  background-size: cover;
 }
 
-.promo-desc a {
-    color: rgb(255, 255, 255);
-    background: rgb(0, 86, 121);
-    padding: 4% 10%;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all .3s ;
+header .color {
+  width: 100%;
+  height: inherit;
+  background: black;
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.603) 55%, rgba(19, 0, 0, 0.589) 100%);
 }
 
-.promo-desc a:hover{
-    background: rgba(8, 6, 6, 0.719);
+.divMenu {
+  background-color: rgba(0, 0, 0, 0.247) !important;
+  padding: 10px 0px;
 }
 
-.div-prom-img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 0px;
-    text-align: center;
+.divMenu .navbar {
+  background: transparent !important;
 }
-
 
-#imagen-3 {
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.divMenu .navbar #botonMenu {
+  border: 0px !important;
+  padding: 0px !important;
 }
 
-.div-prom-img img{
-    max-width: 100%;
+.divMenu .navbar #botonMenu #iconMenu {
+  font-size: 40px;
+  color: white;
 }
-/*--------*/
-/*--------*/
-.div-contactos {
-    padding-top: 10px;
-    width: 100%;
-    position: relative;
-    float: left;
-    /* background: rgba(0, 0, 0, 0.137); */
-    background: #1e272e;
-    text-align: center;
-    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.171);
-}
 
-.div-contactos h2 { 
-    font-size: 50px;
-    padding: 20px;
-    color: white;
+.divMenu .aLogo {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
-.div-sub-contactos{
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-   /* box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158); */
+.divMenu .aLogo:hover {
+  color: white !important;
 }
 
-.div-contact{
-    padding: 10px;
+.divMenu .nav-link {
+  padding: 0px 20px !important;
+  font-size: 18px;
+  color: white !important;
 }
 
-.div-contact p{
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.795);
+.divMenu .nav-link:hover {
+  color: #ea2027 !important;
 }
 
-.div-contact i {
-    position: relative;
-    color:rgb(0, 86, 121);
+.seccionBienvenida {
+  width: 100%;
 }
 
-.div-contact a{
-    color: rgb(0, 86, 121);
+.seccionBienvenida .divSecBienvenida {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 40px 0px;
+  padding: 40px 0px;
 }
 
-.div-redes h2 {
-    color: rgba(37, 37, 37, 0.89);
-    font-size: 30px;
+.seccionBienvenida .divSecBienvenida div {
+  width: 70%;
+  padding: 10px 0px;
 }
-
 
-.div-redes { 
-    padding-top: 1px;
-    padding-bottom: 40px;
+.seccionBienvenida .divSecBienvenida div h1 {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
 }
 
-
-.div-seccion-2 {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    background: white;
-    padding-top: 30px;
-    /* outline:  1px dashed rgb(0, 0, 0);    */
-    box-shadow: 0px -2px 15px rgba(0, 0, 0, 0.26);
+.seccionBienvenida .divSecBienvenida div h2 {
+  font-size: 30px;
+  color: white;
 }
-
 
-.sub-seccion-2 {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.685);
-    box-shadow: 2px 10px 10px rgba(2, 2, 2, 0.158);
-    /* outline:  1px dashed rgb(0, 0, 0);    */
-    padding-bottom: 50px;
+.seccion1 {
+  position: relative;
+  width: 100%;
 }
 
-.div-seccion-2 h2 {
-    text-align: center;
-    font-size: 40px;
-    color: rgba(199, 18, 18, 1);
-    padding-bottom: 40px;
+.seccion1 .divSec1 {
+  position: relative;
+  top: -40px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-
-.div-sec-sd {
-    width: 50%;
-    height: auto;
-    /* outline:  1px dashed rgb(255, 0, 0);    */
+.seccion1 .divSec1 div {
+  width: 30%;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px auto;
+  -webkit-box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.075);
 }
-
 
-.div-sec-inter {
-    position: relative;
-
-    width: 50%;
-    height: auto;
-    /* outline:  1px dashed rgb(0, 252, 34);  */
+.seccion1 .divSec1 div ion-icon {
+  font-size: 50px;
+  color: #ea2027;
 }
 
-.div-ub-sd {
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    box-shadow: -1px -10px 10px rgba(8, 8, 8, 0.13);
+.seccion1 .divSec1 div h1 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.div-ub-inter {
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-    box-shadow: -1px -10px 10px rgba(90, 0, 0, 0.13);
-}
-.div-ub-inter-map{
-    position: relative;
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
+.seccion1 .divSec1 div p {
+  color: #2c3e50;
+  font-size: 16px;
 }
 
-.div-ub-inter-map iframe {
-    padding: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.308);
-    border-radius: 20px;
+.seccion2 {
+  width: 100%;
+  height: auto;
+  background: url(../imagenes/baking-cheese-cooking-crust-315755.jpg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 100px 20px;
 }
 
+.seccion2 .divSec2 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.seccion2 .divSec2 .tarjetaFlotante {
+  width: 60%;
+  background: white;
+  padding: 40px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
+          box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
+}
+
+.seccion2 .divSec2 .tarjetaFlotante div {
+  padding: 10px 0px;
+}
 
-.div-sec-sd h2 {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 32px;
-    color: rgba(199, 18, 18, 1);
+.seccion2 .divSec2 .tarjetaFlotante div h1 {
+  font-size: 40px;
+  color: #ea2027;
+  font-weight: bold;
 }
 
-.div-sec-inter h2 {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 32px;
-    color: rgba(199, 18, 18, 1);
-}
-
+.seccion2 .divSec2 .tarjetaFlotante div p {
+  font-size: 18px;
+  color: #2c3e50;
+}
 
-.div-footer{
-    margin-top: 0px;
-    position: relative;
-    float: left;
-    width: 100%;
-    background: #1e272e;
+.seccion2 .divSec2 .tarjetaFlotante div #robert {
+  font-size: 25px;
+  color: #2c3e50;
 }
 
-.div-sub-footer{
-    padding: 50px;
-    text-align: center;
+.seccion2 .divSec2 .tarjetaFlotante div #robert::before {
+  content: '⇴';
 }
 
-.div-sub-footer p {
-    font-size: 20px;
-    color: rgb(253, 253, 253);
-    font-weight: bold;
+.seccion2 .divSec2 .tarjetaFlotante div #pVer::after {
+  color: rgba(0, 0, 0, 0.247);
+  content: 'aliquid temporibus suscipit laboriosam iusto saepe, et atque sapiente ut officiis!';
 }
-
-
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
-
-  .material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
-
-
-  /* Rules for sizing the icon. */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-
-/* Rules for using icons as black on a light background. */
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
-/* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.seccion2 .divSec2 .tarjetaFlotante:hover #pVer::after {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: #2c3e50;
+  content: 'aliquid temporibus suscipit laboriosam iusto saepe, et atque sapiente ut officiis!';
+}
+
+.seccionPizzas {
+  position: relative;
+  width: 100%;
+}
+
+.seccionPizzas .divP {
+  margin-top: 30px;
+  padding: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.seccionPizzas .divP h1 {
+  font-weight: bold;
+}
+
+.seccionPizzas .divPizzas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+  margin: 0px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza {
+  width: 30%;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza .divImg {
+  width: 50%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza .divImg img {
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza div {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza div h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza div p {
+  padding: 5px 0px;
+}
+
+.pizzaElegida {
+  position: fixed;
+  top: -20000px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pizzaElegida .dentro {
+  text-align: center;
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
+}
+
+.pizzaElegida div {
+  padding: 10px;
+}
+
+.pizzaElegida div h1 {
+  font-weight: bold;
+}
+
+.pizzaElegida div ion-icon {
+  font-size: 50px;
+  border: 2px solid #15ff00;
+  color: #15ff00;
+  padding: 10px;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=style.css.map */

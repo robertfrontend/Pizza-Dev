@@ -1,0 +1,277 @@
+@import './variables';
+@import './flotante';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: $font1;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    .color {
+        width: 100%;
+        height: inherit;
+        background: rgb(0,0,0);
+        background: linear-gradient(20deg, rgba(0, 0, 0, 0.603) 55%, rgba(19, 0, 0, 0.589) 100%);
+    }
+}
+//----menu-----
+.divMenu{
+    background-color: rgba(0, 0, 0, 0.247) !important;
+    padding: 10px 0px;
+    .navbar{
+        background: transparent !important ;
+        #botonMenu {
+            border: 0px !important;
+            padding: 0px !important;
+            #iconMenu {
+                font-size: 40px;
+                color: white;
+            }
+        }
+    }
+    //logo
+    .aLogo {
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: white !important;
+        }
+    }
+    //nav-link
+    .nav-link {
+        padding: 0px 20px !important;
+        font-size: 18px;
+        color: white !important;
+        &:hover{
+            color: $rojo !important;
+        }
+    }
+}
+
+.seccionBienvenida{
+    width: 100%;
+    .divSecBienvenida {
+        width: 100%;
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 40px 0px;
+        padding: 40px 0px;
+        div {
+            width: 70%;
+            padding: 10px 0px;
+            h1 {
+                font-size: 80px;
+                color: white;
+                font-weight: bold;
+                font-family: $font2;
+            }
+            h2 {
+                font-size: 30px;
+                color: white;
+            }
+        }
+    }
+}
+
+.seccion1 {
+    position: relative;
+    width: 100%;
+    .divSec1{
+        position: relative;
+        top: -40px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        div {
+            width: 30%;
+            padding: 40px 30px;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            margin: 10px auto;
+            box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.075);
+            ion-icon {
+                font-size: 50px;
+                color: $rojo;
+            }
+            h1{
+                color: $negro;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p{
+                color: $negro;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.seccion2 {
+    width: 100%;
+    height: auto;
+    background: url(../imagenes/baking-cheese-cooking-crust-315755.jpg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 100px 20px;
+    .divSec2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .tarjetaFlotante{
+            width: 60%;
+            background: white;
+            padding: 40px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
+            div{ 
+                padding: 10px 0px;
+                h1 {
+                    font-size: 40px;
+                    color: $rojo;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 18px;
+                    color: $negro;
+                }
+                #robert{
+                    font-size: 25px;
+                    color: $negro;
+
+                    &::before {
+                        content: '⇴';
+                    }
+                }
+                #pVer{
+                    &::after{
+                        color: rgba(0, 0, 0, 0.247);
+                        content: 'aliquid temporibus suscipit laboriosam iusto saepe, et atque sapiente ut officiis!';
+                    }
+                }
+            }
+
+            &:hover {
+                #pVer{
+                    &::after{
+                        transition: all .2s;
+                        color: $negro;
+                        content: 'aliquid temporibus suscipit laboriosam iusto saepe, et atque sapiente ut officiis!';
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seccionPizzas {
+    position: relative;
+    width: 100%;
+    .divP{
+        margin-top: 30px;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        h1 {
+            font-weight: bold;
+        }
+    }
+    .divPizzas {
+        width: 100%;
+        display: flex;
+        padding: 20px 0px;
+        margin: 0px 0px;
+        flex-wrap: wrap;
+        .tarjetaPizza{
+            width: 30%;
+            padding: 20px 20px;
+            border-radius: 10px;
+            margin: 10px auto;
+            // box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.295);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .divImg{
+                width: 50%;
+                height: 30vh;
+                object-fit: cover;
+                overflow: hidden;
+                display: flex;
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 5px 0px;
+                    object-fit: cover;
+                }
+            }
+            div{
+                width: 100%;
+                object-fit: cover;
+
+                h1 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    padding: 5px 0px;
+                }
+                p{
+                    padding: 5px 0px;
+                }
+            } 
+        }
+    }
+}
+
+.pizzaElegida{
+    position: fixed;
+    top: -20000px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .dentro {
+        text-align: center;
+        width: 25%;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
+    }
+    div {
+        padding: 10px;
+        h1 {
+            font-weight: bold;
+        }
+        ion-icon{
+            font-size: 50px;
+            border: 2px solid rgb(21, 255, 0);
+            color: rgb(21, 255, 0);
+            padding: 10px;
+            border-radius: 100px;
+        }
+    }
+}

@@ -1,200 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza hut</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/medias.css">
-</head>
-<body>
-    <header class="header">
-        <div class="div-header">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Pizza Dev</title>
+    <!--Mi css-->
+    <link rel="stylesheet" href="./estilos/style.css">
+
+    <!--font 1-->
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+
+    <!--font 2-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <main class="main">
+        <header>
+          <div class="color">
+            <div class="divMenu">
                 <div class="container">
-                    <div class="sub-header">
-                        <div class="div-logo">
-                           <a href="">
-                                <img src="imagenes/logoTitle.png" alt="">
-                           </a>
-                        </div>
-                        <div class="div-menu" id="div-menu">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                    <br>
-                                    <a href="#promociones">Promociones</a>
-                                    <br>
-                                    <a href="#seccion-contactos">Contactos</a>
-                                    <br>
-                                    <a href="ubicacion.html">Donde estamos</a>
-                                </li>
-                            </ul>
-                         </div>
-                         <div class="div-icono-menu">
-                           <div class="divoc">
-                            <a href="#/menu" id="btn-menu"><i class="material-icons" id="icono-menu" >menu</i></a>
-                           </div>
-                        </div>
-                        </div>
-                    </div>
-            </div>
-    </header>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand aLogo" href="#">
+                            Pizza Dev
+                        </a>
+                        <button id="botonMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <ion-icon id="iconMenu" name="menu-outline"></ion-icon>
+                        </button>
 
-    <!-- <section class="seccion-bienvenida">
-        <div class="div-bienvenida">
-            <div class="container">
-                <div class="sub-bienvenida">
-                    <div class="div-desc">
-                        <h2>Bienvenidos a Pizza Hut, las pizzas calientes mas jugosas del mundo</h2>
-                        <p>Lorem ipsum dolor sit ametsto illo quisquam natus.</p>
-                        <div class="control-btn-pedir">
-                            <a href="#" id="lo-quiero">Lo quiero yaa!</a>
-                            <a href="#promociones" id="ver-ofer">Ver mas ofertas</a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Promociones</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Ofertas</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contactos</a>
+                              </li>
+                          </ul>
                         </div>
-                    </div>
-                    <div class="div-img-desc">
-                        <div class="control-p">
-                            <img src="imagenes/pi1jpg.jpg" alt="">
-                                <p>Pizza mediana de peperoni <strong>+</strong> pastel de remolacha <strong>+</strong> puddin de platano, por $1,120 DO</p>
-                        </div>
-                    </div>
+                      </nav>
                 </div>
             </div>
-        </div>
-    </section> -->
+            <section class="seccionBienvenida">
+              <div class="container">
+                  <div class="divSecBienvenida">
+                      <div>
+                          <h1>
+                             Las Pizzas mas sabrosas del mundo.
+                          </h1>
+                      </div>
+                      <div>
+                          <h2>
+                              Encarga tu hut favorita, mira nuestras ofertas.
+                          </h2>
+                      </div>
+                      <div>
+                        <img src="" alt="">
+                      </div>
+                      <div>
+                          <a id="abrirFlotante" href="#" class="boton1">
+                              Ordenar
+                          </a>
+                          <a href="#" class="boton2">
+                              Ver Ofertas
+                          </a>
+                      </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </header>
+        
+        <div class="divFlotante">
+          <div class="container">
+            <div class="divFlot">
+                <div class="divDerecho">
+                  <div>
+                    <h1>Pedidos Rapidos!</h1>
+                  </div>
+                  <div>
+                    <form action="">
+                      <br>
+                      <label for="">Nombre Completo</label>
+                      <input type="text" id="nombre" required placeholder="Nombre">
+                      <br>
+                      <label for="">Email</label>
+                      <input name="email" id="email" type="email" required placeholder="fulanito@email.com">
+                      <br>
+                      <div id="verificar">
 
-    <section class="seccion-yes">
-        <div class="div-yes">
-            <div class="container">
-                <div class="sub-yes">
-                    <div class="yes">
-                        <h1>Pizza Hut, lo mas sabroso.</h1>
-                    </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div id="divBoton">
+                    <a href="#" id="submit" class="boton1">Enviar</a>
+                    <a href="#" id="cerrarFlotante" class="boton3">Salir</a>
+                  </div>
+                </div>
+                <div class="divIzquierdo">
+                  <img src="./imagenes/deliveryTerminado.svg" alt="">
                 </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <section class="seccion-1" > 
-        <div class="div-seccion-1"id="promociones">
-            <div class="container">
-                <h2><strong>Promociones</strong> del dia de hoy </h2>
-                <div class="sub-seccion-1">
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pizaaa.jpg" alt="">
-                        </div>
-                        <div class="promo-desc" id="promo-1">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita! </p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pi1jpg.jpg" alt="">
-                        </div>
-                        <div class="promo-desc">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita! </p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pizaaa.jpg" alt="">
-                        </div>
-                        <div class="promo-desc">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita!</p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pizaaa.jpg" alt="">
-                        </div>
-                        <div class="promo-desc" id="promo-1">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita! </p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pi1jpg.jpg" alt="">
-                        </div>
-                        <div class="promo-desc">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita!</p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promo-1" id="promo-1">
-                        <div class="div-prom-img">
-                            <img id="imagen-3" src="imagenes/pizaaa.jpg" alt="">
-                        </div>
-                        <div class="promo-desc">
-                            <h3>Pizza de peperoni mediana $1,500 </h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias cum eos expedita!</p>
-                            <div class="div-btn-pedir-ya">
-                                <a href="/">Pedir aqui</a>
-                            </div>
-                        </div>
-                    </div>
+        <section class="seccion1">
+          <div class="container">
+            <div class="divSec1">
+              <div>
+                <ion-icon name="beer-outline"></ion-icon>
+                <h1>Saludables</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquam, incidunt quidem nobis atque esse.
+                </p>
+              </div>
+              <div>
+                <ion-icon name="pizza-outline"></ion-icon>
+                <h1>Deliciosa</h1>
+                <p>
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptas quibusdam iste eaque illum harum.
+                </p>
+              </div>
+              <div>
+                <ion-icon name="flash-outline"></ion-icon>
+                <h1>Rapidas</h1>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore illum quaerat eaque dolores. Error, vitae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="seccion2">
+          <div class="container">
+            <div class="divSec2">
+              <div class="tarjetaFlotante">
+                <div>
+                  <h1>
+                    Deliciosa, dificil de compartir.
+                  </h1>
+                </div>
+                <div>
+                  <p>
+                    Discover
+                    Our story
+                  </p>
+                </div>
+                <div>
+                  <p id="pVer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis, 
+                      quos dolore alias obcaecati voluptatum, vel ratione nesciunt consequatur
+                  </p>
+                </div>
+                <div>
+                  <h1 id="robert">
+                    Robert Virgonili.
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="seccionPizzas">
+          <div class="container">
+            <div class="divP">
+              <h1>Menu de Pizzas deliciosas</h1>
+            </div>
+          </div>
+          <div class="container">
+            <div class="divPizzas">
+
+              <div class="tarjetaPizza">
+                  <div class="divImg">
+                    <img src="./imagenes/top-view-photo-of-baked-pizza-2147491.jpg" alt="">
+                  </div>
+                  <div>
+                    <h1>
+                      Peperoni + Queso Sheeww
+                    </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                    </p>
+                    <a onclick="mostrarPizzaElegida();" 
+                    class="boton3 mostrarPizza" href="#ver">Pedir</a>
+                  </div>
+              </div>
+
+              <div class="tarjetaPizza">
+                <div class="divImg">
+                  <img src="./imagenes/fondo.jpg" alt="">
+                </div>
+                <div>
+                  <h1>
+                    Peperoni + Queso Sheeww
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                  </p>
+                  <a onclick="mostrarPizzaElegida();" 
+                  class="boton3 mostrarPizza" href="#ver">Pedir</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="seccion-contactos">
-        <div class="div-contactos" id="seccion-contactos">
-            <h2>contactos <i class="material-icons">contacts</i></h2>
-            <div class="container">
-                <div class="div-sub-contactos">
-                    <div class="div-contact">
-                        <p><i class="material-icons">phone</i> <strong>Santo Domingo: </strong> <a href="">809-001-0022</a></p>
-                        <p><i class="material-icons">stay_primary_portrait</i> <strong>Interior: </strong> <a href="">829-001-0022</a></p>
-                    </div>
-                    <div class="div-redes">
-                        <h2>Siguenos en:</h2>
-                        <span><a href=""><img src="imagenes/icons8-instagram-64.png" style="width: 50px;" alt=""></a></span>
-                        <span><a href=""><img src="imagenes/icons8-twitter-96.png" style="width: 50px;" alt=""></a></span>
-                        <span><a href=""><img src="imagenes/icons8-facebook-96.png" style="width: 50px;" alt=""></a></span>
-                    </div>
-                </div>
+            <div class="tarjetaPizza">
+              <div class="divImg">
+                <img src="./imagenes/pizza-386717_1920.jpg" alt="">
+              </div>
+              <div>
+                <h1>
+                  Peperoni + Queso Sheeww
+                </h1>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                </p>
+                <a onclick="mostrarPizzaElegida();" 
+                class="boton3 mostrarPizza" href="#ver">Pedir</a>
+              </div>
             </div>
-        </div>
-    </section>
 
-  
-    <footer class="footer">
-        <div class="div-footer">
-            <div class="container">
-                <div class="div-sub-footer">
-                    <p>&copy; Robert Developer</p>
-                </div>
+            <div class="tarjetaPizza">
+              <div class="divImg">
+                <img src="./imagenes/pizza-386717_1920.jpg" alt="">
+              </div>
+              <div>
+                <h1>
+                  Peperoni + Queso Sheeww
+                </h1>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                </p>
+                <a onclick="mostrarPizzaElegida();" 
+                class="boton3 mostrarPizza" href="#ver">Pedir</a>
+              </div>
             </div>
+
+            <div class="tarjetaPizza">
+              <div class="divImg">
+                <img src="./imagenes/pizza-386717_1920.jpg" alt="">
+              </div>
+              <div>
+                <h1>
+                  Peperoni + Queso Sheeww
+                </h1>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                </p>
+                <a onclick="mostrarPizzaElegida();" 
+                class="boton3 mostrarPizza" href="#ver">Pedir</a>
+              </div>
+            </div>
+
+            <div class="tarjetaPizza">
+              <div class="divImg">
+                <img src="./imagenes/pizza-386717_1920.jpg" alt="">
+              </div>
+              <div>
+                <h1>
+                  Peperoni + Queso Sheeww
+                </h1>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis?
+                </p>
+                <a onclick="mostrarPizzaElegida();" 
+                class="boton3 mostrarPizza" href="#ver">Pedir</a>
+              </div>
+            </div>
+              
+            </div>
+          </div>
+        </section>
+        <div class="pizzaElegida">
+          <div class="dentro">
+            <div>
+              <h1>Exito</h1>
+            </div>
+            <div>
+              <ion-icon name="checkmark-outline"></ion-icon>
+              <p id="textoPedido"></p>
+            </div>
+            <div>
+              <a href="#" id="cerrarPizzaElegida" class="boton3">Cerrar</a>
+            </div>
+          </div>
         </div>
-    </footer>
+    </main>
 
-    <!-- &copy; -->
-
+    <!--mi script-->
     <script src="index.js"></script>
-</body>
+
+    <!--ion icons-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
