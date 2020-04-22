@@ -1,94 +1,87 @@
 // Funcion mostrar flotante
-let botonAbrir = document.getElementById('abrirFlotante');
+let botonAbrir = document.getElementById('abrirFlotante');// boton abrir flotante
+let divFlotante = document.querySelector('.divFlotante'); // div flotante
+botonAbrir.addEventListener('click', mostrarFlotante); //evento para abrir flotante
 
-let divFlotante = document.querySelector('.divFlotante');
-
-botonAbrir.addEventListener('click', mostrarFlotante);
-
-function mostrarFlotante(e) {
+function mostrarFlotante(e) { // funcion abrir flotante
     e.preventDefault();
-
     divFlotante.style.top = '-0px';
+    divFlotante.style.transition = '.5s';
 
-    divFlotante.style.transition = '.5s'
 };
 
 // ----validar formulario-----
 
-let botonSubmit = document.querySelector('#divBoton #submit');
+let botonSubmit = document.querySelector('#divBoton #submit'); //boton enviar
+botonSubmit.addEventListener('click', enviarFormulario);//evento para enviar formulario
+const verifica = document.createElement('p');//alerta de verificacion
 
-botonSubmit.addEventListener('click', enviarFormulario);
+//funcion para enviar formulario
+function enviarFormulario() { 
 
-const verifica = document.createElement('p');
-
-verifica.style.color = 'red';
-
-function enviarFormulario() {
-    
-    const nombre = document.getElementById('nombre').value;
-    
-    const email = document.getElementById('email').value;
-    
+    //obtener los datos del formulario
+    const nombre = document.getElementById('nombre').value; // valor de nombre
+    const email = document.getElementById('email').value; // valor del email
     const divVerficar = document.getElementById('verificar');
     
     //verficar que los campos esten completos
-    if(nombre == "" ||email == ""){
-
+    if(nombre == "" || email == ""){ //llamar al verificar si los campos estan vacios
+        
         divVerficar.appendChild(verifica)
         verifica.innerText = 'Porfavor llena todos los campos';
+        verifica.style.color = 'red';
 
-        email.style.border = '1px solid red';
+    }else { // si todo esta lleno ejecuta esta funcion
 
-    }
-    else {
         // alert('enviado')
         mostrarPizzaElegida();
 
+        //llamar al elemento pizza elegida
         textoEle.innerHTML = 'Enviado Correctamente';
 
+        //resetear el formulario
         document.querySelector('form').reset();
-
-        verifica.innerHTML = '';
+        
+        //llamar la funcion quitarFlotante se complete todos los campos y se envien
+        // quitarFlotante();
     }
-    
-}
-//quitar flotante.
+};
+
+//----fin validar formulario----
+
+//------Quitar flotante-------
+
 let botonQuitar = document.getElementById('cerrarFlotante'); 
+botonQuitar.addEventListener('click', quitarFlotante); // evento quitar flotante
 
-botonQuitar.addEventListener('click', quitarFlotante);
+//funcion quitar flotante
+function quitarFlotante() {
+    // e.preventDefault();
 
-function quitarFlotante(e) {
+    divFlotante.style.top = '-100000px';
+    verifica.innerHTML = ''; // quita la alerta verficar campos
+    document.querySelector('form').reset(); // resetea el formulario cuando se cierra
+};
 
-    e.preventDefault();
+//-----fin Quitar flotante--------
 
-    divFlotante.style.top = '-1000px';
-
-    verifica.innerHTML = '';
-
-    document.querySelector('form').reset();
-}
 
 //---- mostrar pizza elegida ------
 
 const botonElegirPizza = document.getElementById('mostrarPizzaElegida');
-
 const divPizza = document.querySelector('.pizzaElegida');
-
 const textoEle = document.getElementById('textoPedido');
 
 function mostrarPizzaElegida() {
 
     divPizza.style.top = '-0';
-
     divPizza.style.transition = '.4s';
-
     textoEle.innerHTML = 'Tu pedido se ha realizado con exito'
 
-}
+};
 
 //cerrar pizza elegida
 let botonCerrarElegirPizza = document.getElementById('cerrarPizzaElegida');
-
 botonCerrarElegirPizza.addEventListener('click', cerrarElegir);
 
 function cerrarElegir(e) {
@@ -96,4 +89,23 @@ function cerrarElegir(e) {
 
     divPizza.style.top = '-20000px';
 
+};
+
+//---fin cerrar pizza elegida------
+
+//-----Mi Loader-----
+
+window.onload =  load;
+
+const divCarga = document.querySelector('.divCarga');
+
+function load () {
+    if(window.onload = true) {
+        divCarga.style.top = '0px';
+        console.log('no ha cargado')
+    }
+    if(window.onload = true) {
+        divCarga.style.top = '-100000px';
+        console.log('cargo')
+    }
 }

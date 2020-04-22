@@ -1,5 +1,7 @@
 @import './variables';
 @import './flotante';
+@import './cargarSitio';
+
 
 html {
     scroll-behavior: smooth;
@@ -18,16 +20,18 @@ header{
     height: 100vh;
     background: url(../imagenes/fondo.jpg);
     background-size: cover;
+    
     .color {
         width: 100%;
         height: inherit;
         background: rgb(0,0,0);
         background: linear-gradient(20deg, rgba(0, 0, 0, 0.603) 55%, rgba(19, 0, 0, 0.589) 100%);
     }
+
 }
 //----menu-----
 .divMenu{
-    background-color: rgba(0, 0, 0, 0.247) !important;
+    background-color: rgba(0, 0, 0, 0.055) !important;
     padding: 10px 0px;
     .navbar{
         background: transparent !important ;
@@ -70,6 +74,7 @@ header{
         align-items: flex-start;
         margin: 40px 0px;
         padding: 40px 0px;
+        flex-wrap: wrap;
         div {
             width: 70%;
             padding: 10px 0px;
@@ -272,6 +277,119 @@ header{
             color: rgb(21, 255, 0);
             padding: 10px;
             border-radius: 100px;
+        }
+    }
+}
+
+
+.seccionComent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: $negroso;
+    div {
+        width: 50%;
+        padding: 20px 0px;
+    }
+    .divImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 80%;
+        }
+    }
+    .divText{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div {
+            padding: 10px 0px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            ion-icon {
+                font-size: 80px;
+                color: white;
+                
+            }
+            p {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.divBotonCambiar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    div {
+        padding: 0px 10px;
+        
+        a {
+            width: 40%;
+            text-decoration: none;
+            ion-icon{
+                background-color:  $negro;
+                font-size: 40px;
+                color: white;
+            }
+        }
+    }
+}   
+
+.seccionChef{
+    width: 100%;
+    background-color: $negroso;
+    .divChef {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        div {
+            width: 50%;
+            padding: 20px 0px;
+            
+        }
+        .divImg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+            }
+        }
+        .divText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div{
+                padding: 10px 0px;
+                width: 100%;
+                text-align: center;
+                ion-icon{
+                    font-size: 80px;
+                    color: white;
+                }
+                h1 {
+                    color: white;
+                }
+                p {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
         }
     }
 }
