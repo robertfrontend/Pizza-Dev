@@ -4,8 +4,8 @@
   background-color: #ea2027;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 50px;
+  font-size: 22px;
+  border-radius: 5px;
   margin: 2px 5px;
 }
 
@@ -14,38 +14,47 @@
   transition: all .2s;
   text-decoration: none;
   color: white;
-  background-color: black;
 }
 
 .boton1:focus {
-  background-color: #2c3e50;
+  background-color: #020e1be3;
+}
+
+@media (max-width: 757px) {
+  .boton1 {
+    font-size: 20px;
+  }
 }
 
 .boton2 {
-  padding: 4px 40px;
-  border: 2px solid #ea2027;
+  padding: 4px 30px;
+  border: 2px solid #020e1b;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 50px;
+  font-size: 22px;
+  border-radius: 5px;
   margin: 2px 5px;
+  background-color: #020e1b;
 }
 
 .boton2:hover {
-  -webkit-transition: all .2s;
-  transition: all .2s;
   text-decoration: none;
   color: white;
-  background: #ea2027;
+}
+
+@media (max-width: 757px) {
+  .boton2 {
+    font-size: 20px;
+  }
 }
 
 .boton3 {
-  padding: 4px 40px;
-  border: 2px solid #2c3e50;
-  color: #2c3e50;
+  padding: 2px 30px;
+  border: 2px solid #020e1b;
+  color: #020e1be3;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 50px;
+  font-size: 22px;
+  border-radius: 5px;
   margin: 2px 5px;
   font-weight: bold;
 }
@@ -55,12 +64,19 @@
   transition: all .2s;
   text-decoration: none;
   color: white;
-  background: #2c3e50;
+  background: #020e1b;
+  font-weight: no;
 }
 
 .boton3:focus {
-  background-color: #2c3e50;
+  background-color: #020e1b;
   color: white;
+}
+
+@media (max-width: 757px) {
+  .boton3 {
+    font-size: 20px;
+  }
 }
 
 .divFlotante {
@@ -82,7 +98,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.568);
 }
 
 .divFlotante .divFlot {
@@ -129,7 +144,7 @@
 }
 
 .divFlotante .divFlot .divDerecho div h1 {
-  color: #2c3e50;
+  color: #020e1be3;
   font-weight: bold;
 }
 
@@ -154,7 +169,7 @@
 .divFlotante .divFlot .divDerecho div form label {
   font-size: 18px;
   font-weight: bold;
-  color: #2c3e50;
+  color: #020e1be3;
 }
 
 .divFlotante .divFlot .divDerecho div form input {
@@ -162,11 +177,11 @@
   padding: 5px 20px;
   border: 1px solid rgba(0, 0, 0, 0.219);
   border-radius: 40px;
-  color: #2c3e50;
+  color: #020e1be3;
 }
 
 .divFlotante .divFlot .divDerecho div form input:focus {
-  border: 1px solid #2c3e50;
+  border: 1px solid #020e1be3;
 }
 
 .divFlotante .divFlot .divDerecho #divBoton {
@@ -248,8 +263,195 @@
   }
 }
 
+.divMenu {
+  width: 100%;
+  background-color: black;
+}
+
+.navMenu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
+}
+
+.navMenu .divLogo {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navMenu .divLogo p {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu .divLogo p:hover {
+  color: white !important;
+}
+
+.navMenu .divIcoMenu {
+  width: 10%;
+  height: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navMenu .divIcoMenu #controlA {
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.navMenu .divIcoMenu #controlA div {
+  width: 40%;
+  height: 4px;
+  margin: 2px 0px;
+  background-color: black !important;
+  border-radius: 20px;
+}
+
+.navMenu .divIcoMenu #controlA:hover .top {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.navMenu .divIcoMenu #controlA:hover .medium {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.navMenu .divIcoMenu #controlA:hover .bottom {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.navMenu .navs {
+  width: 30%;
+  height: 90vh;
+  position: absolute;
+  top: 78px;
+  right: -10000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 100000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1321px) {
+  .navMenu .navs {
+    top: 67px;
+  }
+}
+
+@media (max-width: 1226px) {
+  .navMenu .navs {
+    top: 80px !important;
+    width: 50% !important;
+  }
+}
+
+.navMenu .navs div {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navMenu .navs div a {
+  font-size: 25px;
+  color: white;
+}
+
+.navMenu .navs div ion-icon {
+  padding: 0px 10px;
+  font-size: 25px;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -271,46 +473,6 @@ header .color {
   height: inherit;
   background: black;
   background: linear-gradient(20deg, rgba(0, 0, 0, 0.603) 55%, rgba(19, 0, 0, 0.589) 100%);
-}
-
-.divMenu {
-  background-color: rgba(0, 0, 0, 0.055) !important;
-  padding: 10px 0px;
-}
-
-.divMenu .navbar {
-  background: transparent !important;
-}
-
-.divMenu .navbar #botonMenu {
-  border: 0px !important;
-  padding: 0px !important;
-}
-
-.divMenu .navbar #botonMenu #iconMenu {
-  font-size: 40px;
-  color: white;
-}
-
-.divMenu .aLogo {
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-}
-
-.divMenu .aLogo:hover {
-  color: white !important;
-}
-
-.divMenu .nav-link {
-  padding: 0px 20px !important;
-  font-size: 18px;
-  color: white !important;
-}
-
-.divMenu .nav-link:hover {
-  color: #ea2027 !important;
 }
 
 .seccionBienvenida {
@@ -338,16 +500,66 @@ header .color {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1226px) {
+  .seccionBienvenida .divSecBienvenida {
+    padding: 20px 0px;
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 995px) {
+  .seccionBienvenida .divSecBienvenida {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0px;
+  }
+}
+
 .seccionBienvenida .divSecBienvenida div {
   width: 70%;
   padding: 10px 0px;
+}
+
+@media (max-width: 1226px) {
+  .seccionBienvenida .divSecBienvenida div {
+    width: 100%;
+    text-align: center;
+  }
+  .seccionBienvenida .divSecBienvenida div h1 {
+    font-size: 70px !important;
+  }
+}
+
+@media (max-width: 995px) {
+  .seccionBienvenida .divSecBienvenida div {
+    width: 80%;
+  }
+  .seccionBienvenida .divSecBienvenida div h1 {
+    font-size: 60px !important;
+  }
+  .seccionBienvenida .divSecBienvenida div h2 {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 757px) {
+  .seccionBienvenida .divSecBienvenida div {
+    width: 100% !important;
+  }
+  .seccionBienvenida .divSecBienvenida div h1 {
+    font-size: 55px !important;
+  }
 }
 
 .seccionBienvenida .divSecBienvenida div h1 {
   font-size: 80px;
   color: white;
   font-weight: bold;
-  font-family: "Courgette", cursive;
+  font-family: "Mukta", sans-serif;
 }
 
 .seccionBienvenida .divSecBienvenida div h2 {
@@ -374,10 +586,24 @@ header .color {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+@media (max-width: 1226px) {
+  .seccion1 .divSec1 {
+    top: 20px;
+  }
+}
+
+@media (max-width: 757px) {
+  .seccion1 .divSec1 {
+    top: -30px;
+  }
 }
 
 .seccion1 .divSec1 div {
-  width: 30%;
+  width: 300px;
   padding: 40px 30px;
   text-align: center;
   background-color: white;
@@ -387,19 +613,25 @@ header .color {
           box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.075);
 }
 
+@media (max-width: 757px) {
+  .seccion1 .divSec1 div {
+    width: 100%;
+  }
+}
+
 .seccion1 .divSec1 div ion-icon {
   font-size: 50px;
-  color: #ea2027;
+  color: #020e1b;
 }
 
 .seccion1 .divSec1 div h1 {
-  color: #2c3e50;
+  color: #020e1be3;
   font-size: 20px;
   font-weight: bold;
 }
 
 .seccion1 .divSec1 div p {
-  color: #2c3e50;
+  color: #020e1be3;
   font-size: 16px;
 }
 
@@ -410,6 +642,16 @@ header .color {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 100px 20px;
+}
+
+@media (max-width: 757px) {
+  .seccion2 {
+    background-size: 100%;
+    background-position: center;
+  }
+  .seccion2 .divSec2 .tarjetaFlotante {
+    width: 100% !important;
+  }
 }
 
 .seccion2 .divSec2 {
@@ -426,6 +668,13 @@ header .color {
           align-items: center;
 }
 
+@media (max-width: 995px) {
+  .seccion2 .divSec2 {
+    margin: 50px 0px;
+    text-align: center;
+  }
+}
+
 .seccion2 .divSec2 .tarjetaFlotante {
   width: 60%;
   background: white;
@@ -435,24 +684,30 @@ header .color {
           box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
 }
 
+@media (max-width: 995px) {
+  .seccion2 .divSec2 .tarjetaFlotante {
+    padding: 30px;
+  }
+}
+
 .seccion2 .divSec2 .tarjetaFlotante div {
   padding: 10px 0px;
 }
 
 .seccion2 .divSec2 .tarjetaFlotante div h1 {
   font-size: 40px;
-  color: #ea2027;
+  color: #020e1b;
   font-weight: bold;
 }
 
 .seccion2 .divSec2 .tarjetaFlotante div p {
   font-size: 18px;
-  color: #2c3e50;
+  color: #020e1be3;
 }
 
 .seccion2 .divSec2 .tarjetaFlotante div #robert {
   font-size: 25px;
-  color: #2c3e50;
+  color: #020e1be3;
 }
 
 .seccion2 .divSec2 .tarjetaFlotante div #robert::before {
@@ -467,7 +722,7 @@ header .color {
 .seccion2 .divSec2 .tarjetaFlotante:hover #pVer::after {
   -webkit-transition: all .2s;
   transition: all .2s;
-  color: #2c3e50;
+  color: #020e1be3;
   content: 'aliquid temporibus suscipit laboriosam iusto saepe, et atque sapiente ut officiis!';
 }
 
@@ -498,8 +753,21 @@ header .color {
       flex-wrap: wrap;
 }
 
+@media (max-width: 757px) {
+  .seccionPizzas .divPizzas .tarjetaPizza {
+    width: 100% !important;
+  }
+  .seccionPizzas .divPizzas .tarjetaPizza .divImg {
+    width: 80% !important;
+    height: 40vh !important;
+  }
+  .seccionPizzas .divPizzas .tarjetaPizza .divImg img {
+    width: 9100;
+  }
+}
+
 .seccionPizzas .divPizzas .tarjetaPizza {
-  width: 30%;
+  width: 300px;
   padding: 20px 20px;
   border-radius: 10px;
   margin: 10px auto;
@@ -612,7 +880,23 @@ header .color {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #222f3e;
+  background-color: #020e1b;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 995px) {
+  .seccionComent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .seccionComent div {
+    width: 500px !important;
+  }
 }
 
 .seccionComent div {
@@ -712,14 +996,14 @@ header .color {
 }
 
 .divBotonCambiar div a ion-icon {
-  background-color: #2c3e50;
+  background-color: #020e1be3;
   font-size: 40px;
   color: white;
 }
 
 .seccionChef {
   width: 100%;
-  background-color: #222f3e;
+  background-color: #020e1b;
 }
 
 .seccionChef .divChef {
@@ -792,64 +1076,5 @@ header .color {
 .seccionChef .divChef .divText div p {
   font-size: 20px;
   color: white;
-}
-
-footer {
-  width: 100%;
-}
-
-footer .divContact {
-  padding: 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .divContact div {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .divContact div form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .divContact div form input {
-  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

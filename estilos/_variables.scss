@@ -2,10 +2,16 @@ $font1:'Mukta', sans-serif;
 $font2:'Courgette', cursive;
 
 //colores
-$negro:#2c3e50;
-$negroso:#222f3e;
+$negro:#020e1be3;
+$negroso:#020e1b;
 $rojo:rgb(234, 32, 39);
 
+//---Medias querys----
+
+$breackPoint-desktop: 1321px;
+$breackPoint-media: 1226px;
+$breackPoint-9: 995px;
+$breackPoint-7:757px;
 
 //botones
 
@@ -14,55 +20,65 @@ $rojo:rgb(234, 32, 39);
     background-color: $rojo;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 22px;
+    border-radius: 5px;
     margin: 2px 5px;
     &:hover{
         transition: all .2s;
         text-decoration: none;
         color: white;
-        background-color: rgb(0, 0, 0);
     }
     &:focus{
         background-color: $negro;
     }
+    @media (max-width:$breackPoint-7){
+        font-size: 20px;
+    }
 }
 
 .boton2 {
-    padding: 4px 40px;
-    border: 2px solid $rojo;
+    padding: 4px 30px;
+    border: 2px solid $negroso;
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 22px;
+    border-radius: 5px;
     margin: 2px 5px;
+    background-color: $negroso;
     &:hover{
-        transition: all .2s;
         text-decoration: none;
         color: white;
-        background: $rojo;
+    }
+    @media (max-width:$breackPoint-7){
+        font-size: 20px;
     }
 
 }
 
 .boton3 {
-    padding: 4px 40px;
-    border: 2px solid $negro;
+    padding: 2px 30px;
+    border: 2px solid $negroso;
     color: $negro;
     text-decoration: none;
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: 22px;
+    border-radius: 5px;
     margin: 2px 5px;
     font-weight: bold;
     &:hover{
         transition: all .2s;
         text-decoration: none;
         color: white;
-        background: $negro;
+        background: $negroso;
+        font-weight: no;
     }
     &:focus {
-        background-color: $negro;
+        background-color: $negroso;
         color: white;
+    }
+    @media (max-width:$breackPoint-7){
+        font-size: 20px;
     }
 
 }
+
+

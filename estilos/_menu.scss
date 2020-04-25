@@ -1,0 +1,113 @@
+
+//----menu-----
+.divMenu{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.navMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    .divLogo {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+            &:hover{
+                color: white !important;
+            }
+        }
+    }
+
+    .divIcoMenu{
+        width: 10%;
+        height: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #controlA{
+            width: 60%;
+            text-align: center;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            border-radius: 5px;
+            div {
+                width: 40%;
+                height: 4px;
+                margin: 2px 0px;
+                background-color: black !important;
+                border-radius: 20px;
+
+            }
+
+            &:hover {
+                .top{
+                    transition: all .2s;
+                    transform: translateY(-100%);
+                }
+                .medium{
+                    transition: all .2s;
+                    transform: translateY(0%);
+                }
+                .bottom{
+                    transition: all .2s;
+                    transform: translateY(100%);
+                }
+            }
+
+        }
+    }
+    
+    .navs{
+        width: 30%;
+        height: 90vh;
+        position: absolute;
+        top: 78px;
+        right: -10000px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 100000;
+        transition: all .2s;
+        padding: 20px 0px;
+        @media (max-width: $breackPoint-desktop ) {
+            top: 67px;
+        }
+        @media (max-width:$breackPoint-media){
+            top: 80px !important;
+            width: 50% !important;
+        }
+        div {
+            padding: 20px 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            a {
+                font-size: 25px;
+                color: white;
+            }
+            ion-icon{
+                padding: 0px 10px;
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+}
