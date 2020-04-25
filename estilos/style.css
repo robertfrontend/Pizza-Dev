@@ -795,8 +795,14 @@ header .color {
 }
 
 .seccionComent div {
-  width: 50%;
-  padding: 20px 0px;
+  width: 500px;
+  padding: 20px 10px;
+}
+
+@media (max-width: 757px) {
+  .seccionComent div {
+    width: 100% !important;
+  }
 }
 
 .seccionComent .divImg {
@@ -925,6 +931,11 @@ header .color {
   padding: 20px 0px;
 }
 
+.seccionChef .divChef div p {
+  font-size: 20px;
+  color: white;
+}
+
 .seccionChef .divChef .divImg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -959,12 +970,18 @@ header .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .seccionChef .divChef .divText div {
-  padding: 10px 0px;
-  width: 100%;
-  text-align: center;
+  width: 500px;
+  padding: 20px 0px;
+}
+
+@media (max-width: 757px) {
+  .seccionChef .divChef .divText div {
+    width: 100% !important;
+  }
 }
 
 .seccionChef .divChef .divText div ion-icon {

@@ -348,8 +348,11 @@ header{
         }
     }
     div {
-        width: 50%;
-        padding: 20px 0px;
+        width: 500px;
+        padding: 20px 10px;
+        @media (max-width:$breackPoint-7) {
+            width: 100% !important;
+        }
     }
     .divImg{
         display: flex;
@@ -421,6 +424,10 @@ header{
         div {
             width: 500px;
             padding: 20px 0px;
+            p {
+                font-size: 20px;
+                color: white;
+            }
             
         }
         .divImg{
@@ -437,10 +444,13 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
             div{
-                padding: 10px 0px;
-                width: 100%;
-                text-align: center;
+                width: 500px;
+                padding: 20px 0px;
+                @media (max-width:$breackPoint-7) {
+                    width: 100% !important;
+                }
                 ion-icon{
                     font-size: 80px;
                     color: white;
