@@ -1,25 +1,58 @@
-//----Funcones del Menu----
+// MENU
 
+//variables
 var divMenu = document.querySelector('.divMenu');
+let estadoM = document.querySelector('.navs')
+estadoM = false
 
-function botonMenu() {
+var nav = document.querySelector('.navs');
+const botonMenu = document.querySelector('#controlA')
 
-    const estadoM = document.querySelector('.navs').style.right;
-    let nav = document.querySelector('.navs');
 
-    if(estadoM == "-10000px"){
-        nav.style.right = '0px';
-        divMenu.style.background = 'rgb(234, 32, 39)';
-        divMenu.style.transition = 'all .5s';
+// event listeners
 
-    }else {
-        nav.style.right = '-10000px';
-        nav.style.transition = 'all .5s';
-        divMenu.style.background = 'black';
+botonMenu.addEventListener('click', abrirMenu )
+
+//function
+
+function abrirMenu() {
+
+    switch(estadoM) {
+        case false:
+
+            nav.style.top = '70px'
+            estadoM = true
+            divMenu.style.borderBottom = '2px solid rgba(196, 0, 7, 0.507)';
+            divMenu.style.transition = 'all .5s';
+
+            break;
+
+        case true:
+
+            estadoM = false;
+            nav.style.top = '-1000px'
+            divMenu.style.borderBottom = 'rgba(0, 0, 0, 0.425)';
+
+
+        break;
+            
     }
 
-};
+    // if(estadoM == false){
 
+    //     nav.style.right = '-0px'
+    //     nav.style.background = 'red'
+
+    //     divMenu.style.background = 'rgb(234, 32, 39)';
+    //     divMenu.style.transition = 'all .5s';
+
+    // }else {
+    //     nav.style.right = '-1000px'
+    //     nav.style.transition = 'all .5s';
+    //     divMenu.style.background = 'black';
+    // }
+
+};
 
 
 

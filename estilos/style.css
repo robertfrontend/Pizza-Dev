@@ -1,12 +1,13 @@
 @charset "UTF-8";
 .boton1 {
-  padding: 6px 40px;
+  padding: 4px 40px;
   background-color: #ea2027;
   color: white;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 5px;
   margin: 2px 5px;
+  border: 2px solid #ea2027;
 }
 
 .boton1:hover {
@@ -14,15 +15,19 @@
   transition: all .2s;
   text-decoration: none;
   color: white;
+  background-color: #c40007;
+  border: 2px solid #c40007;
 }
 
 .boton1:focus {
   background-color: #020e1be3;
+  border: 2px solid #020e1be3;
 }
 
 @media (max-width: 757px) {
   .boton1 {
     font-size: 20px;
+    padding: 4px 30px;
   }
 }
 
@@ -31,7 +36,7 @@
   border: 2px solid #020e1b;
   color: white;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 5px;
   margin: 2px 5px;
   background-color: #020e1b;
@@ -40,20 +45,23 @@
 .boton2:hover {
   text-decoration: none;
   color: white;
+  background-color: #020e1be3;
+  border: 2px solid #020e1be3;
 }
 
 @media (max-width: 757px) {
   .boton2 {
     font-size: 20px;
+    padding: 4px 20px;
   }
 }
 
 .boton3 {
-  padding: 2px 30px;
+  padding: 4px 30px;
   border: 2px solid #020e1b;
   color: #020e1be3;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
   border-radius: 5px;
   margin: 2px 5px;
   font-weight: bold;
@@ -76,132 +84,8 @@
 @media (max-width: 757px) {
   .boton3 {
     font-size: 20px;
+    padding: 4px 20px;
   }
-}
-
-.divFlotante {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: -10000px;
-  z-index: 10000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.divFlotante .divFlot {
-  margin: 0 auto;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.137);
-          box-shadow: 0px 0px 30px 20px rgba(0, 0, 0, 0.137);
-}
-
-.divFlotante .divFlot .divDerecho {
-  width: 60%;
-}
-
-.divFlotante .divFlot .divDerecho div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.divFlotante .divFlot .divDerecho div h1 {
-  color: #020e1be3;
-  font-weight: bold;
-}
-
-.divFlotante .divFlot .divDerecho div form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: left;
-}
-
-.divFlotante .divFlot .divDerecho div form label {
-  font-size: 18px;
-  font-weight: bold;
-  color: #020e1be3;
-}
-
-.divFlotante .divFlot .divDerecho div form input {
-  width: 60%;
-  padding: 5px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.219);
-  border-radius: 40px;
-  color: #020e1be3;
-}
-
-.divFlotante .divFlot .divDerecho div form input:focus {
-  border: 1px solid #020e1be3;
-}
-
-.divFlotante .divFlot .divDerecho #divBoton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.divFlotante .divFlot .divIzquierdo {
-  width: 40%;
 }
 
 .divCarga {
@@ -265,7 +149,8 @@
 
 .divMenu {
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.425);
+  border: 2px solid transparent;
 }
 
 .navMenu {
@@ -347,6 +232,12 @@
   border-radius: 5px;
 }
 
+@media (max-width: 757px) {
+  .navMenu .divIcoMenu #controlA {
+    width: 100% !important;
+  }
+}
+
 .navMenu .divIcoMenu #controlA div {
   width: 40%;
   height: 4px;
@@ -380,8 +271,8 @@
   width: 30%;
   height: 90vh;
   position: absolute;
-  top: 78px;
-  right: -10000px;
+  top: -1000px;
+  right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,7 +280,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.945);
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -404,14 +295,13 @@
 
 @media (max-width: 1321px) {
   .navMenu .navs {
-    top: 67px;
+    width: 50% !important;
   }
 }
 
 @media (max-width: 1226px) {
   .navMenu .navs {
-    top: 80px !important;
-    width: 50% !important;
+    width: 80% !important;
   }
 }
 
@@ -435,6 +325,7 @@
 .navMenu .navs div a {
   font-size: 25px;
   color: white;
+  padding: 6px 10px;
 }
 
 .navMenu .navs div ion-icon {
@@ -445,6 +336,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -458,13 +350,18 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Mukta", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.main {
+  width: 100% !important;
   overflow-x: hidden;
 }
 
 header {
   width: 100%;
-  height: 100vh;
-  background: url(../imagenes/fondo.jpg);
+  height: 125vh;
+  background: url(../imagenes/fondo2.jpg);
   background-size: cover;
 }
 
@@ -472,7 +369,7 @@ header .color {
   width: 100%;
   height: inherit;
   background: black;
-  background: linear-gradient(20deg, rgba(0, 0, 0, 0.603) 55%, rgba(19, 0, 0, 0.589) 100%);
+  background: linear-gradient(20deg, rgba(0, 0, 0, 0.555) 55%, rgba(0, 0, 0, 0.507) 100%);
 }
 
 .seccionBienvenida {
@@ -491,9 +388,9 @@ header .color {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 40px 0px;
   padding: 40px 0px;
   -ms-flex-wrap: wrap;
@@ -502,8 +399,8 @@ header .color {
 
 @media (max-width: 1226px) {
   .seccionBienvenida .divSecBienvenida {
-    padding: 20px 0px;
-    margin: 10px 0px;
+    padding: 30px 0px;
+    margin: 30px 0px;
   }
 }
 
@@ -520,17 +417,14 @@ header .color {
 }
 
 .seccionBienvenida .divSecBienvenida div {
-  width: 70%;
+  width: 100%;
   padding: 10px 0px;
+  text-align: center;
 }
 
 @media (max-width: 1226px) {
-  .seccionBienvenida .divSecBienvenida div {
-    width: 100%;
-    text-align: center;
-  }
   .seccionBienvenida .divSecBienvenida div h1 {
-    font-size: 70px !important;
+    font-size: 60px !important;
   }
 }
 
@@ -592,7 +486,7 @@ header .color {
 
 @media (max-width: 1226px) {
   .seccion1 .divSec1 {
-    top: 20px;
+    top: -20px;
   }
 }
 
@@ -621,7 +515,7 @@ header .color {
 
 .seccion1 .divSec1 div ion-icon {
   font-size: 50px;
-  color: #020e1b;
+  color: #ea2027;
 }
 
 .seccion1 .divSec1 div h1 {
@@ -682,6 +576,7 @@ header .color {
   border-radius: 10px;
   -webkit-box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
           box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.185);
+  border-left: 5px solid #ea2027;
 }
 
 @media (max-width: 995px) {
@@ -1015,10 +910,18 @@ header .color {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .seccionChef .divChef div {
-  width: 50%;
+  width: 500px;
   padding: 20px 0px;
 }
 
