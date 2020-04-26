@@ -466,3 +466,78 @@ header{
         }
     }
 }
+
+
+.seccionOrdenar{
+    // margin: 10px 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    .padreQui{
+        width: 40% !important;
+        background-color: $negroso;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        .divQuitar{
+            position: relative;
+            top: -50px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            a{
+                margin: 0px 10px;
+                font-size: 20px;
+                padding: 10px 20px;
+                text-decoration: none;
+                background-color: $rojo;
+                border-radius: 40px;
+                color: white;
+            }
+        }
+        
+        .divOrdenar{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0px;
+            h1 {
+                font-size: 30px;
+                color: red;
+            }
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 5px 40px;
+                label {
+                    padding: 0px 10px;
+                    font-weight: bold;
+                    color: white;
+                }
+                #name {
+                    width: 100%;
+                }
+                #email {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+}

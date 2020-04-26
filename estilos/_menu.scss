@@ -44,8 +44,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px 0px;
-            border-radius: 5px;
+            padding: 20px 0px;
+            border-radius: 100%;
             @media (max-width:$breackPoint-7){
                 width: 100% !important;
             }
@@ -61,7 +61,7 @@
             &:hover {
                 .top{
                     transition: all .2s;
-                    transform: translateY(-100%);
+                    transform: translateY(-50%);
                 }
                 .medium{
                     transition: all .2s;
@@ -69,49 +69,49 @@
                 }
                 .bottom{
                     transition: all .2s;
-                    transform: translateY(100%);
+                    transform: translateY(50%);
                 }
             }
 
         }
     }
-    
-    .navs{
-        width: 30%;
-        height: 90vh;
+
+    .padreNav{
         position: absolute;
-        top: -1000px ;
-        right: 0px;
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.945);
-        justify-content: flex-start;
-        align-items: flex-start;
-        z-index: 100000;
-        transition: all .2s;
-        padding: 20px 0px;
-        @media (max-width: $breackPoint-desktop ) {
-            width: 50% !important;
-        }
-        @media (max-width:$breackPoint-media){
-            width: 80% !important;
-        }
-        div {
-            padding: 20px 40px;
+        top: 80px;
+        right: 100px;
+        width: 20%;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        .menu {
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            a {
-                font-size: 25px;
-                color: white;
-                padding: 6px 10px;
-            }
-            ion-icon{
-                padding: 0px 10px;
-                font-size: 25px;
-                color: white;
+            padding: 20px;
+            flex-wrap: wrap;
+            div {
+                width: 50%;
+                padding: 20px 0px;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                a{
+                    font-size: 20px;
+                    color: $negro;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    ion-icon{
+                        font-size: 18x;
+                        padding: 0px 5px;
+                    }
+                }
             }
         }
     }
+
 }

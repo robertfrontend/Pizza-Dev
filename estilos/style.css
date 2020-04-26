@@ -228,8 +228,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
-  border-radius: 5px;
+  padding: 20px 0px;
+  border-radius: 100%;
 }
 
 @media (max-width: 757px) {
@@ -249,8 +249,8 @@
 .navMenu .divIcoMenu #controlA:hover .top {
   -webkit-transition: all .2s;
   transition: all .2s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .navMenu .divIcoMenu #controlA:hover .medium {
@@ -263,50 +263,22 @@
 .navMenu .divIcoMenu #controlA:hover .bottom {
   -webkit-transition: all .2s;
   transition: all .2s;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
-.navMenu .navs {
-  width: 30%;
-  height: 90vh;
+.navMenu .padreNav {
   position: absolute;
-  top: -1000px;
-  right: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.945);
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  z-index: 100000;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  padding: 20px 0px;
+  top: 80px;
+  right: 100px;
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+  background-color: white;
 }
 
-@media (max-width: 1321px) {
-  .navMenu .navs {
-    width: 50% !important;
-  }
-}
-
-@media (max-width: 1226px) {
-  .navMenu .navs {
-    width: 80% !important;
-  }
-}
-
-.navMenu .navs div {
-  padding: 20px 40px;
+.navMenu .padreNav .menu {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,18 +292,41 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.navMenu .navs div a {
-  font-size: 25px;
-  color: white;
-  padding: 6px 10px;
+.navMenu .padreNav .menu div {
+  width: 50%;
+  padding: 20px 0px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.navMenu .navs div ion-icon {
-  padding: 0px 10px;
-  font-size: 25px;
-  color: white;
+.navMenu .padreNav .menu div a {
+  font-size: 20px;
+  color: #020e1be3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navMenu .padreNav .menu div a ion-icon {
+  font-size: 18x;
+  padding: 0px 5px;
 }
 
 html {
@@ -996,5 +991,129 @@ header .color {
 .seccionChef .divChef .divText div p {
   font-size: 20px;
   color: white;
+}
+
+.seccionOrdenar {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.seccionOrdenar .padreQui {
+  width: 40% !important;
+  background-color: #020e1b;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.seccionOrdenar .padreQui .divQuitar {
+  position: relative;
+  top: -50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.seccionOrdenar .padreQui .divQuitar a {
+  margin: 0px 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ea2027;
+  border-radius: 40px;
+  color: white;
+}
+
+.seccionOrdenar .padreQui .divOrdenar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+}
+
+.seccionOrdenar .padreQui .divOrdenar h1 {
+  font-size: 30px;
+  color: red;
+}
+
+.seccionOrdenar .padreQui .divOrdenar div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px 40px;
+}
+
+.seccionOrdenar .padreQui .divOrdenar div label {
+  padding: 0px 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.seccionOrdenar .padreQui .divOrdenar div #name {
+  width: 100%;
+}
+
+.seccionOrdenar .padreQui .divOrdenar div #email {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
