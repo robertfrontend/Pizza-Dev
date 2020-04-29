@@ -11,7 +11,7 @@ btnOrdenar.addEventListener('click', mostrarOrdenar);
 
 let botonX = `
     <a id="quitar" href="#seccionBienvenida">X</a>
-`
+`;
 
 // funcion mostrar ordenar
 function mostrarOrdenar() {
@@ -47,9 +47,7 @@ function mostrarOrdenar() {
     seccionOrdenar.innerHTML = template;
     seccionOrdenar.style.height = '100vh';
 
-
     let btnValidar = document.querySelector('#validForm');
-
 
     //event validar form
     btnValidar.addEventListener('click', validarForm);
@@ -60,59 +58,63 @@ function mostrarOrdenar() {
 
 };
 
+class Interfaz {
+    imprimirMensaje(mensaje, tipo){
+        let errorEmail = document.querySelector('#errorEmail');
+        
+        if(tipo === 'error'){
+            errorEmail.innerHTML = `${mensaje}`;
+            errorEmail.style.color = 'red';
+
+        }else {
+            errorEmail.innerHTML = `${mensaje}`
+            errorEmail.style.color = 'green';
+        };
+
+    };
+};
+
 //validar formulario
 function validarForm() {
 
     let inputName = document.querySelector('#name').value;
     let inputEmail = document.querySelector('#email').value;
-
     let vacio = "";
-    let errorName = document.querySelector('#errorName');
-    let errorEmail = document.querySelector('#errorEmail');
 
+    const ui = new Interfaz();
+    
     switch(vacio){
 
         case inputName:
-
-            console.log('Completa el nombre')
-            errorName.innerHTML = 'Completa el nombre'
-            errorName.style.color = 'red';
-
+            ui.imprimirMensaje('Completa el Nombre', 'error');
             break;
 
         case inputEmail:
-
-            console.log('Completa el email')
-            errorEmail.innerHTML = 'Completa el email'
-            errorEmail.style.color = 'red';
-
+            ui.imprimirMensaje('Completa el email', 'error');
             break;
 
         default:
-            console.log('completado')
-            errorName.innerHTML = 'Completado'
-            errorName.style.color = 'green';
+            ui.imprimirMensaje('Bien completado', 'correcto');
+            
 
-            errorEmail.innerHTML = 'Completado'
-            errorEmail.style.color = 'green';
-
-        };
+    };
 };
 
 function quitarOrdenar() {
     seccionOrdenar.innerHTML = '';
-    seccionOrdenar.style.transition = '.4s'
-    
+    seccionOrdenar.style.transition = '.4s';
     seccionOrdenar.style.height = 'auto';
-    seccionOrdenar.style.transition = '.4s'
+    seccionOrdenar.style.transition = '.4s';
 };
 
-setTimeout(function(){
-    seccionOrdenar.innerHTML = '';
-    seccionOrdenar.style.transition = '.4s'
-    
-    seccionOrdenar.style.height = 'auto';
-    seccionOrdenar.style.transition = '.4s'
-},10000)
+let iconoLike = document.querySelector('#iconoLike');
 
+function like() {
+    iconoLike.name = 'heart'
+}
 
+//ecmascript 6
+
+// const verOfertas = document.querySelector('#verOfertas')
+
+// verOfertas.addEventListener('click', funcionVerOfertas)

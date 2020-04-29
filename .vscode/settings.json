@@ -1,3 +1,4 @@
 {
-    "editor.fontWeight": "200"
+    "editor.fontWeight": "200",
+    "liveServer.settings.port": 5501
 }

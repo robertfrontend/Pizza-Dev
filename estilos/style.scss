@@ -268,6 +268,10 @@ header{
             justify-content: center;
             align-items: center;
             text-align: center;
+            ion-icon{
+                color: red;
+                font-size: 30px;
+            }
             .divImg{
                 width: 50%;
                 height: 30vh;
@@ -539,5 +543,7 @@ header{
             }
         }
     }
-
+    #error{
+        color: red;
+    }
 }

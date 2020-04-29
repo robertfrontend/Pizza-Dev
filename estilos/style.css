@@ -677,6 +677,11 @@ header .color {
   text-align: center;
 }
 
+.seccionPizzas .divPizzas .tarjetaPizza ion-icon {
+  color: red;
+  font-size: 30px;
+}
+
 .seccionPizzas .divPizzas .tarjetaPizza .divImg {
   width: 50%;
   height: 30vh;
