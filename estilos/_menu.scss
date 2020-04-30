@@ -39,7 +39,6 @@
         #controlA{
             width: 60%;
             text-align: center;
-            background-color: white;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -53,7 +52,7 @@
                 width: 40%;
                 height: 4px;
                 margin: 2px 0px;
-                background-color: black !important;
+                background-color: white !important;
                 border-radius: 20px;
 
             }

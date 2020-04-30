@@ -258,6 +258,7 @@ header{
             }
         }
         .tarjetaPizza{
+            position: relative;
             width: 300px;
             padding: 20px 20px;
             border-radius: 10px;
@@ -272,8 +273,24 @@ header{
                 color: red;
                 font-size: 30px;
             }
+            .precioFlot{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: auto;
+                background-color: $negro;
+                border-radius: 10px;
+                p{
+                    margin: 0;
+                    padding: 10px;
+                    color: white;
+                }
+            }
+            .oferta{
+                background-color: $rojo !important;
+            }
             .divImg{
-                width: 50%;
+                width: 100%;
                 height: 30vh;
                 object-fit: cover;
                 overflow: hidden;
@@ -508,7 +525,6 @@ header{
                 color: white;
             }
         }
-        
         .divOrdenar{
             width: 100%;
             display: flex;
@@ -539,7 +555,6 @@ header{
                 #email {
                     width: 100%;
                 }
-
             }
         }
     }

@@ -8,7 +8,6 @@ estadoM = false
 var padreNav = document.querySelector('.padreNav');
 const botonMenu = document.querySelector('#controlA')
 
-
 // event listeners
 
 botonMenu.addEventListener('click', abrirMenu )
@@ -35,24 +34,16 @@ const templateMenu = `
 
 
 function abrirMenu() {
-
     switch(estadoM) {
         case false:
-
             padreNav.innerHTML = templateMenu;
             estadoM = true
-            
             break;
-
         case true:
             estadoM = false
             padreNav.innerHTML = ""
-
         break;
-            
     }
-
-
 };
 
 

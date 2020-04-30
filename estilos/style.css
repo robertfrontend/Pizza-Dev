@@ -5,7 +5,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 100px;
   margin: 2px 5px;
   border: 2px solid #ea2027;
 }
@@ -37,7 +37,7 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 100px;
   margin: 2px 5px;
   background-color: #020e1b;
 }
@@ -61,8 +61,8 @@
   border: 2px solid #020e1b;
   color: #020e1be3;
   text-decoration: none;
-  font-size: 20px;
-  border-radius: 5px;
+  font-size: 16px !important;
+  border-radius: 100px;
   margin: 2px 5px;
   font-weight: bold;
 }
@@ -214,7 +214,6 @@
 .navMenu .divIcoMenu #controlA {
   width: 60%;
   text-align: center;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +241,7 @@
   width: 40%;
   height: 4px;
   margin: 2px 0px;
-  background-color: black !important;
+  background-color: white !important;
   border-radius: 20px;
 }
 
@@ -657,6 +656,7 @@ header .color {
 }
 
 .seccionPizzas .divPizzas .tarjetaPizza {
+  position: relative;
   width: 300px;
   padding: 20px 20px;
   border-radius: 10px;
@@ -682,8 +682,27 @@ header .color {
   font-size: 30px;
 }
 
+.seccionPizzas .divPizzas .tarjetaPizza .precioFlot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  background-color: #020e1be3;
+  border-radius: 10px;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza .precioFlot p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.seccionPizzas .divPizzas .tarjetaPizza .oferta {
+  background-color: #ea2027 !important;
+}
+
 .seccionPizzas .divPizzas .tarjetaPizza .divImg {
-  width: 50%;
+  width: 100%;
   height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1120,5 +1139,9 @@ header .color {
 
 .seccionOrdenar .padreQui .divOrdenar div #email {
   width: 100%;
+}
+
+.seccionOrdenar #error {
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

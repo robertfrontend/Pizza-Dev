@@ -15,6 +15,10 @@ function load () {
         
     };
 
+    setTimeout(function() {
+        divCarga.style.top = '-100000px';
+    },3000)
+
 };
 
 
