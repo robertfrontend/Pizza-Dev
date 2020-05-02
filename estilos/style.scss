@@ -515,7 +515,7 @@ header{
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
-            a{
+            p{
                 margin: 0px 10px;
                 font-size: 20px;
                 padding: 10px 20px;
@@ -523,6 +523,7 @@ header{
                 background-color: $rojo;
                 border-radius: 40px;
                 color: white;
+                cursor: pointer;
             }
         }
         .divOrdenar{
@@ -560,5 +561,37 @@ header{
     }
     #error{
         color: red;
+    }
+}
+
+footer{
+    padding-top: 50px;
+    width: 100%;
+    background-color: $negroso;
+    overflow: hidden;
+
+    .divFooter {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        div {
+            width: auto;
+            height: 5vh;
+            justify-content: center;
+            align-items: center;
+            p {
+                color: white;
+            }
+            a {
+                padding: 0px 10px;
+                text-decoration: none;
+            }
+            ion-icon {
+                font-size: 25px;
+                color: white;
+            }
+        }
     }
 }

@@ -149,7 +149,6 @@
 
 .divMenu {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.425);
   border: 2px solid transparent;
 }
 
@@ -229,6 +228,7 @@
           align-items: center;
   padding: 20px 0px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 757px) {
@@ -1076,7 +1076,7 @@ header .color {
           align-items: flex-end;
 }
 
-.seccionOrdenar .padreQui .divQuitar a {
+.seccionOrdenar .padreQui .divQuitar p {
   margin: 0px 10px;
   font-size: 20px;
   padding: 10px 20px;
@@ -1084,6 +1084,7 @@ header .color {
   background-color: #ea2027;
   border-radius: 40px;
   color: white;
+  cursor: pointer;
 }
 
 .seccionOrdenar .padreQui .divOrdenar {
@@ -1143,5 +1144,54 @@ header .color {
 
 .seccionOrdenar #error {
   color: red;
+}
+
+footer {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #020e1b;
+  overflow: hidden;
+}
+
+footer .divFooter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .divFooter div {
+  width: auto;
+  height: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .divFooter div p {
+  color: white;
+}
+
+footer .divFooter div a {
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+footer .divFooter div ion-icon {
+  font-size: 25px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

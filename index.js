@@ -6,38 +6,17 @@ document.write('<script src="./js/loader.js"></script>');
 let btnOrdenar = document.querySelector('#ordernar');
 let seccionOrdenar = document.querySelector('.seccionOrdenar');
 
-// estilos
+
+// ----Estilos----
+var estilosOrdenar = {
+    hei: '100vh'
+}
+
 var estilos = {
     error: 'red',
     correcto: 'green',
-    botonQuitar: `<a id="quitar" href="#seccionBienvenida">X</a>`
-
+    botonQuitar: `<p id="quitar">X</p>`
 };
-
-// ----Event Listener----
-eventListeners();
-
-function eventListeners(){
-    btnOrdenar.addEventListener('click', mostrarOrdenar);
-};
-
-// ----Clases----
-class Interfaz {
-    imprimirMensaje(mensaje, tipo){
-        let errorEmail = document.querySelector('#errorEmail');
-        
-        if(tipo === 'error'){
-            errorEmail.innerHTML = `${mensaje}`;
-            errorEmail.style.color = estilos.error;
-
-        }else {
-            errorEmail.innerHTML = `${mensaje}`
-            errorEmail.style.color = estilos.correcto;
-        };
-
-    };
-};
-
 const templateOrdenar = `
 <div class="padreQui" id="ordenar" >
     <div class="divQuitar">
@@ -67,10 +46,31 @@ const templateOrdenar = `
 </div>
 `;
 
+// ----Clases----
+
+class Interfaz {
+    imprimirMensaje(mensaje, tipo){
+        let errorEmail = document.querySelector('#errorEmail');
+        if(tipo === 'error'){
+            errorEmail.innerHTML = `${mensaje}`;
+            errorEmail.style.color = estilos.error;
+
+        }else {
+            errorEmail.innerHTML = `${mensaje}`
+            errorEmail.style.color = estilos.correcto;
+        };
+    };
+};
+
+// ----Event Listener----
+
+eventListeners();
+
+function eventListeners(){
+    btnOrdenar.addEventListener('click', mostrarOrdenar);
+};
+
 // ----Funciones----
-var estilosOrdenar = {
-    hei: '100vh'
-}
 
 //mostrar ordenar
 function mostrarOrdenar() {
