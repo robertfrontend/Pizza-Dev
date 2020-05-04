@@ -6,8 +6,7 @@ document.write('<script src="./js/loader.js"></script>');
 let btnOrdenar = document.querySelector('#ordernar');
 let seccionOrdenar = document.querySelector('.seccionOrdenar');
 
-
-// ----Estilos----
+// Estilos----
 var estilosOrdenar = {
     hei: '100vh'
 }
@@ -50,7 +49,9 @@ const templateOrdenar = `
 
 class Interfaz {
     imprimirMensaje(mensaje, tipo){
+        
         let errorEmail = document.querySelector('#errorEmail');
+
         if(tipo === 'error'){
             errorEmail.innerHTML = `${mensaje}`;
             errorEmail.style.color = estilos.error;
