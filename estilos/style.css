@@ -93,7 +93,7 @@
   height: 100vh;
   position: fixed;
   top: 0px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.562);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

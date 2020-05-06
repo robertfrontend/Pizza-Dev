@@ -23,6 +23,9 @@ const templateMenu = `
   <div>
     <a href="#contactos"><ion-icon name="call-outline"></ion-icon>Contactos</a>
   </div>
+  <div>
+    <a href="#pedis" id="pedidos" ><ion-icon name="cart-outline"></ion-icon>Pedidos</a>
+  </div>
 </div>
 `;
 
@@ -40,7 +43,6 @@ class TemplateM {
     }
   }
 }
-
 // Function
 
 //abrir menu
@@ -57,6 +59,3 @@ function abrirMenu() {
         break;
     }
 };
-
-
-
