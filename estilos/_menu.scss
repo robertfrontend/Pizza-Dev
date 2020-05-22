@@ -82,6 +82,10 @@
         height: auto;
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
+        @media (max-width:$breackPoint-media){
+            width:300px !important;
+            right: 0;
+        }
         .menu {
             width: 100%;
             display: flex;

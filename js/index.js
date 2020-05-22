@@ -7,19 +7,18 @@ let btnOrdenar = document.querySelector('#ordernar');
 let seccionOrdenar = document.querySelector('.seccionOrdenar');
 
 // Estilos----
-var estilosOrdenar = {
-    hei: '100vh'
-}
-
 var estilos = {
     error: 'red',
     correcto: 'green',
-    botonQuitar: `<p id="quitar">X</p>`
+    botonQuitar: `<p id="quitar">X</p>`,
+    heiOrdenar: '100vh'
 };
+let {error, correcto, botonQuitar, heiOrdenar} = estilos
+
 const templateOrdenar = `
 <div class="padreQui" id="ordenar" >
     <div class="divQuitar">
-        ${estilos.botonQuitar}
+        ${botonQuitar}
     </div>
     <div class="divOrdenar" >
         <h1>
@@ -54,11 +53,11 @@ class Interfaz {
 
         if(tipo === 'error'){
             errorEmail.innerHTML = `${mensaje}`;
-            errorEmail.style.color = estilos.error;
+            errorEmail.style.color = error;
 
         }else {
             errorEmail.innerHTML = `${mensaje}`
-            errorEmail.style.color = estilos.correcto;
+            errorEmail.style.color = correcto;
         };
     };
 };
@@ -76,7 +75,7 @@ function eventListeners(){
 //mostrar ordenar
 function mostrarOrdenar() {
     seccionOrdenar.innerHTML = templateOrdenar;
-    seccionOrdenar.style.height = estilosOrdenar.hei;
+    seccionOrdenar.style.height = heiOrdenar;
 
     let btnValidar = document.querySelector('#validForm');
 
@@ -85,11 +84,10 @@ function mostrarOrdenar() {
 
     let btnQuitar = document.querySelector('#quitar');
     btnQuitar.addEventListener('click', quitarOrdenar);
-
 };
+
 //validar formulario
 function validarForm() {
-
     let inputName = document.querySelector('#name').value;
     let inputEmail = document.querySelector('#email').value;
 
@@ -101,8 +99,7 @@ function validarForm() {
         ui.imprimirMensaje('Completado', 'correcto');
         setTimeout(function(){
             quitarOrdenar();
-        },3000);
-
+        },1000);
     }
 };
 

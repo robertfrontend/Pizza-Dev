@@ -14,12 +14,12 @@ function load () {
         divCarga.style.top = '-100000px';
         
     };
-
-    setTimeout(function() {
-        divCarga.style.top = '-100000px';
-    },3000)
-
 };
+
+setTimeout(function() {
+    divCarga.style.top = '-100000px';
+},3000)
+
 
 
 
