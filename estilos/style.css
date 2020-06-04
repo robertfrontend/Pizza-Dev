@@ -1045,7 +1045,7 @@ header .color {
 
 .seccionOrdenar .padreQui {
   width: 40% !important;
-  background-color: #020e1b;
+  background-color: white;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
   display: -webkit-box;
@@ -1138,7 +1138,7 @@ header .color {
 .seccionOrdenar .padreQui .divOrdenar div label {
   padding: 0px 10px;
   font-weight: bold;
-  color: white;
+  color: #020e1be3;
 }
 
 .seccionOrdenar .padreQui .divOrdenar div #name {

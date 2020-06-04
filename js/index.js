@@ -22,7 +22,7 @@ const templateOrdenar = `
     </div>
     <div class="divOrdenar" >
         <h1>
-            Oferton!
+            Dev Pizza
         </h1>
         <div>
             <label for="exampleInputEmail1">Nombre</label>
@@ -94,7 +94,7 @@ function validarForm() {
     const ui = new Interfaz();
 
     if(inputName == '' || inputEmail == ''){
-        ui.imprimirMensaje('Completa los campos correctamente', 'error');   
+        ui.imprimirMensaje('Completa los campos correctamente', 'error');
     }else {
         ui.imprimirMensaje('Completado', 'correcto');
         setTimeout(function(){
@@ -106,4 +106,3 @@ function validarForm() {
 function quitarOrdenar() {
     seccionOrdenar.innerHTML = '';
 };
-
