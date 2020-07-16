@@ -14,7 +14,6 @@ html {
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0 !important;
     padding: 0 !important;
@@ -40,9 +39,7 @@ header{
         background: rgb(0, 0, 0);
         background: linear-gradient(20deg, rgba(0, 0, 0, 0.555) 55%, rgba(0, 0, 0, 0.507) 100%);
     }
-
 }
-
 
 .seccionBienvenida{
     width: 100%;
@@ -245,18 +242,6 @@ header{
         padding: 20px 0px;
         margin: 0px 0px;
         flex-wrap: wrap;
-        @media (max-width:$breackPoint-7){
-            .tarjetaPizza {
-                width: 100% !important;
-                .divImg{
-                    width: 80% !important;
-                    height: 40vh !important;
-                    img {
-                        width: 9100;
-                    }
-                }
-            }
-        }
         .tarjetaPizza{
             position: relative;
             width: 300px;
@@ -315,6 +300,27 @@ header{
                     padding: 5px 0px;
                 }
             } 
+            &:hover{
+                cursor: pointer;
+                transition: 250ms opacity;
+                transition: all .4s;
+                transform: scale(1.2);
+                z-index: 100;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+                background-color: white;
+            }
+        }
+        @media (max-width:$breackPoint-7){
+            .tarjetaPizza {
+                width: 100% ;
+                .divImg{
+                    width: 80% ;
+                    height: 40vh;
+                    img {
+                        width: 9100;
+                    }
+                }
+            }
         }
     }
 }
@@ -561,6 +567,96 @@ header{
     }
     #error{
         color: red;
+    }
+}
+
+.seccion__reservacion{
+    width: 100%;
+    background: url(../imagenes/3123.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .intro {
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 50%;
+            padding: 10px 20px;
+        }
+        h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 300%;
+            color: $negroso;
+        }
+    }
+    .color{
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.26);
+    }
+    .div__reservacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .dForm{
+            width: 80%;
+            padding: 2em 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.863);
+            border-radius: 8px;
+            flex-wrap: wrap;
+            div {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 5px 0;
+                label {
+                    width: 50%;
+                }
+                input{
+                    width: 350px;
+                    border: 1px solid transparent;
+                    background-color: rgba(0, 0, 0, 0.075);
+                    padding: 10px;
+                }
+                select {
+                    width: 90%;
+                    border: 1px solid transparent;
+                    background-color: rgba(0, 0, 0, 0.075);
+                }
+            }
+        }
+    }
+    .dbo{
+        width: 100%;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: auto;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        button {
+            padding: 8px 100px;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        display: none;
     }
 }
 
