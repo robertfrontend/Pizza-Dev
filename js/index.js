@@ -6,6 +6,9 @@ document.write('<script src="./js/loader.js"></script>');
 let btnOrdenar = document.querySelector('#ordernar');
 let seccionOrdenar = document.querySelector('.seccionOrdenar');
 
+let divReservaciones = document.querySelector('.div__reservacion')
+let enviar = document.getElementById('enviar')
+
 // Estilos----
 var estilos = {
     error: 'red',

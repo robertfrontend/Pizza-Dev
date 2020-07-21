@@ -671,11 +671,6 @@ header .color {
   text-align: center;
 }
 
-.seccionPizzas .divPizzas .tarjetaPizza ion-icon {
-  color: red;
-  font-size: 30px;
-}
-
 .seccionPizzas .divPizzas .tarjetaPizza .precioFlot {
   position: absolute;
   top: 0;
@@ -736,11 +731,11 @@ header .color {
   transition: 250ms opacity;
   -webkit-transition: all .4s;
   transition: all .4s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   z-index: 100;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+  -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.178);
+          box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.178);
   background-color: white;
 }
 
@@ -757,55 +752,6 @@ header .color {
   }
 }
 
-.pizzaElegida {
-  position: fixed;
-  top: -20000px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 100000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pizzaElegida .dentro {
-  text-align: center;
-  width: 25%;
-  height: auto;
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
-          box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
-}
-
-.pizzaElegida div {
-  padding: 10px;
-}
-
-.pizzaElegida div h1 {
-  font-weight: bold;
-}
-
-.pizzaElegida div ion-icon {
-  font-size: 50px;
-  border: 2px solid #15ff00;
-  color: #15ff00;
-  padding: 10px;
-  border-radius: 100px;
-}
-
 .seccionComent {
   width: 100%;
   display: -webkit-box;
@@ -815,9 +761,9 @@ header .color {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #020e1b;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: rgba(133, 133, 133, 0.226);
 }
 
 @media (max-width: 995px) {
@@ -902,49 +848,18 @@ header .color {
 
 .seccionComent .divText div ion-icon {
   font-size: 80px;
-  color: white;
+  color: #020e1b;
 }
 
 .seccionComent .divText div p {
-  color: white;
+  color: #020e1b;
   font-size: 20px;
-}
-
-.divBotonCambiar {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.divBotonCambiar div {
-  padding: 0px 10px;
-}
-
-.divBotonCambiar div a {
-  width: 40%;
-  text-decoration: none;
-}
-
-.divBotonCambiar div a ion-icon {
-  background-color: #020e1be3;
-  font-size: 40px;
-  color: white;
+  font-weight: bold;
 }
 
 .seccionChef {
   width: 100%;
-  background-color: #020e1b;
+  background-color: rgba(133, 133, 133, 0.226);
 }
 
 .seccionChef .divChef {
@@ -972,8 +887,9 @@ header .color {
 }
 
 .seccionChef .divChef div p {
+  color: #020e1b;
   font-size: 20px;
-  color: white;
+  font-weight: bold;
 }
 
 .seccionChef .divChef .divImg {
@@ -1026,16 +942,10 @@ header .color {
 
 .seccionChef .divChef .divText div ion-icon {
   font-size: 80px;
-  color: white;
-}
-
-.seccionChef .divChef .divText div h1 {
-  color: white;
 }
 
 .seccionChef .divChef .divText div p {
   font-size: 20px;
-  color: white;
 }
 
 .seccionOrdenar {
@@ -1201,10 +1111,17 @@ header .color {
   color: #020e1b;
 }
 
+@media screen and (max-width: 1020px) {
+  .seccion__reservacion .intro h1 {
+    font-size: 200%;
+  }
+}
+
 .seccion__reservacion .color {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background: rgba(0, 0, 0, 0.26);
+  padding: 4em 0;
 }
 
 .seccion__reservacion .div__reservacion {
@@ -1240,10 +1157,10 @@ header .color {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(255, 255, 255, 0.863);
+  background: white;
   border-radius: 8px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
 }
 
 .seccion__reservacion .div__reservacion .dForm div {
@@ -1264,6 +1181,7 @@ header .color {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 5px 0;
+  flex-wrap: wrap;
 }
 
 .seccion__reservacion .div__reservacion .dForm div label {
@@ -1271,7 +1189,7 @@ header .color {
 }
 
 .seccion__reservacion .div__reservacion .dForm div input {
-  width: 350px;
+  width: 300px;
   border: 1px solid transparent;
   background-color: rgba(0, 0, 0, 0.075);
   padding: 10px;
@@ -1281,6 +1199,32 @@ header .color {
   width: 90%;
   border: 1px solid transparent;
   background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media screen and (max-width: 1020px) {
+  .seccion__reservacion .div__reservacion .dForm {
+    width: 100%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .seccion__reservacion .div__reservacion .dForm div {
+    width: 100%;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .seccion__reservacion .div__reservacion .dForm div label {
+    width: 100%;
+  }
+  .seccion__reservacion .div__reservacion .dForm div select {
+    width: 100%;
+  }
+  .seccion__reservacion .div__reservacion .dForm div input {
+    width: 100%;
+  }
 }
 
 .seccion__reservacion .dbo {
@@ -1308,17 +1252,10 @@ header .color {
   padding: 8px 100px;
 }
 
-@media screen and (max-width: 800px) {
-  .seccion__reservacion {
-    display: none;
-  }
-}
-
 footer {
-  padding-top: 50px;
   width: 100%;
-  background-color: #020e1b;
   overflow: hidden;
+  padding: 1em 0;
 }
 
 footer .divFooter {
@@ -1340,7 +1277,7 @@ footer .divFooter {
 
 footer .divFooter div {
   width: auto;
-  height: 5vh;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1350,7 +1287,9 @@ footer .divFooter div {
 }
 
 footer .divFooter div p {
-  color: white;
+  color: #020e1be3;
+  font-weight: bold;
+  margin: 0;
 }
 
 footer .divFooter div a {
@@ -1360,6 +1299,12 @@ footer .divFooter div a {
 
 footer .divFooter div ion-icon {
   font-size: 25px;
-  color: white;
+  color: #020e1be3;
+}
+
+footer .divFooter div ion-icon:hover {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  color: #ea2027;
 }
 /*# sourceMappingURL=style.css.map */

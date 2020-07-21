@@ -248,16 +248,11 @@ header{
             padding: 20px 20px;
             border-radius: 10px;
             margin: 10px auto;
-            // box-shadow: 0px 12px 20px 10px rgba(0, 0, 0, 0.295);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            ion-icon{
-                color: red;
-                font-size: 30px;
-            }
             .precioFlot{
                 position: absolute;
                 top: 0;
@@ -304,9 +299,9 @@ header{
                 cursor: pointer;
                 transition: 250ms opacity;
                 transition: all .4s;
-                transform: scale(1.2);
+                transform: scale(1.1);
                 z-index: 100;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+                box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.178);
                 background-color: white;
             }
         }
@@ -325,48 +320,13 @@ header{
     }
 }
 
-.pizzaElegida{
-    position: fixed;
-    top: -20000px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .dentro {
-        text-align: center;
-        width: 25%;
-        height: auto;
-        padding: 10px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.24);
-    }
-    div {
-        padding: 10px;
-        h1 {
-            font-weight: bold;
-        }
-        ion-icon{
-            font-size: 50px;
-            border: 2px solid rgb(21, 255, 0);
-            color: rgb(21, 255, 0);
-            padding: 10px;
-            border-radius: 100px;
-        }
-    }
-}
-
 
 .seccionComent{
     width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: $negroso;
     flex-wrap: wrap;
+    background-color: rgba(133, 133, 133, 0.226);
     @media (max-width:$breackPoint-9){
         justify-content: center;
         align-items: center;
@@ -406,41 +366,19 @@ header{
             text-align: center;
             ion-icon {
                 font-size: 80px;
-                color: white;
-                
+                color: $negroso;
             }
             p {
-                color: white;
+                color: $negroso;
                 font-size: 20px;
+                font-weight: bold;
             }
         }
     }
 }
-
-.divBotonCambiar{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    div {
-        padding: 0px 10px;
-        
-        a {
-            width: 40%;
-            text-decoration: none;
-            ion-icon{
-                background-color:  $negro;
-                font-size: 40px;
-                color: white;
-            }
-        }
-    }
-}   
-
 .seccionChef{
     width: 100%;
-    background-color: $negroso;
+    background-color: rgba(133, 133, 133, 0.226);
     .divChef {
         width: 100%;
         display: flex;
@@ -452,8 +390,9 @@ header{
             width: 500px;
             padding: 20px 0px;
             p {
+                color: $negroso;
                 font-size: 20px;
-                color: white;
+                font-weight: bold;
             }
             
         }
@@ -480,14 +419,11 @@ header{
                 }
                 ion-icon{
                     font-size: 80px;
-                    color: white;
                 }
                 h1 {
-                    color: white;
                 }
                 p {
                     font-size: 20px;
-                    color: white;
                 }
             }
         }
@@ -592,10 +528,16 @@ header{
             font-size: 300%;
             color: $negroso;
         }
+        @media screen and (max-width:1020px){
+            h1 {
+                font-size: 200%;
+            }
+        }
     }
     .color{
         backdrop-filter: blur(5px);
         background: rgba(0, 0, 0, 0.26);
+        padding: 4em 0;
     }
     .div__reservacion{
         width: 100%;
@@ -610,9 +552,9 @@ header{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: rgba(255, 255, 255, 0.863);
+            background: rgb(255, 255, 255);
             border-radius: 8px;
-            flex-wrap: wrap;
+            flex-wrap: wrap !important;
             div {
                 width: 90%;
                 display: flex;
@@ -621,11 +563,12 @@ header{
                 align-items: center;
                 flex-wrap: wrap;
                 padding: 5px 0;
+                flex-wrap: wrap;
                 label {
                     width: 50%;
                 }
                 input{
-                    width: 350px;
+                    width: 300px;
                     border: 1px solid transparent;
                     background-color: rgba(0, 0, 0, 0.075);
                     padding: 10px;
@@ -634,6 +577,26 @@ header{
                     width: 90%;
                     border: 1px solid transparent;
                     background-color: rgba(0, 0, 0, 0.075);
+                }
+            }
+        }
+
+        @media screen and (max-width:1020px){
+            .dForm {
+                width: 100%;
+                flex-direction: column !important;
+                div {
+                    width: 100%;
+                    flex-direction: column !important;
+                    label {
+                        width: 100%;
+                    }
+                    select {
+                        width: 100%;
+                    }
+                    input {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -656,16 +619,14 @@ header{
     }
 
     @media screen and (max-width:800px) {
-        display: none;
+        // display: none;
     }
 }
 
 footer{
-    padding-top: 50px;
     width: 100%;
-    background-color: $negroso;
     overflow: hidden;
-
+    padding: 1em 0;
     .divFooter {
         width: 100%;
         display: flex;
@@ -674,11 +635,13 @@ footer{
         align-items: center;
         div {
             width: auto;
-            height: 5vh;
+            height: auto;
             justify-content: center;
             align-items: center;
             p {
-                color: white;
+                color: $negro;
+                font-weight: bold;
+                margin: 0;
             }
             a {
                 padding: 0px 10px;
@@ -686,7 +649,11 @@ footer{
             }
             ion-icon {
                 font-size: 25px;
-                color: white;
+                color: $negro;
+                &:hover {
+                    transition: all .2s;
+                    color: $rojo;
+                }
             }
         }
     }

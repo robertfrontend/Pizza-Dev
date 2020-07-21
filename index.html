@@ -285,7 +285,7 @@
           </div>
         </section>
 
-        <section class="seccion__reservacion">
+        <section class="seccion__reservacion" id="contactos">
           <div class="color">
             <div class="container">
 
@@ -305,19 +305,20 @@
                     <label for="">
                       Nombre
                       <input class="form-control" placeholder="Mi Nombre"  
-                        type="text">
+                        type="text" id="name" >
                     </label>
                     <label for="">
                        Email
                       <input class="form-control" placeholder="email@example.com" 
-                        type="email">
+                        type="email" id="email" >
                     </label>
                   </div>
                   
                   <div>
                     <label for="">
                       Numero telefonico
-                      <input class="form-control" placeholder="Tu numero"  type="tel">
+                      <input class="form-control" placeholder="Tu numero"
+                      autocomplete=""  type="tel">
                     </label>
                     <label for="">
                       Cuantas personas
@@ -341,25 +342,18 @@
   
                   <div>
                     <label for="">
-                      Seleciona el tiempo
+                      Seleciona la hora
                       <input class="form-control"  type="time">
                     </label>
                     <label for="">
-                      Seleciona la fecha
+                      Seleciona el dia
                       <input class="form-control"  type="date">
-                    </label>
-                  </div>
-  
-                  <div>
-                    <label for="">
-                      Your Mensaje
-                      <input class="form-control"  type="text">
                     </label>
                   </div>
                   
                   <div class="dbo">
                     <div>
-                      <button class="boton1">Enviar</button>
+                      <button class="boton1" id="enviar" >Enviar</button>
                     </div>
                   </div>
                 </div>
@@ -375,7 +369,7 @@
           <div class="container">
             <div class="divFooter">
               <div>
-                <p>Robertrm0 ©2020. Todos los derechos reservados</p>
+                <p>Creado por &copy;Robertrm0 2020.</p>
               </div>
               <div>
                 <a href="https://github.com/robertrm0" target="_blank" >
